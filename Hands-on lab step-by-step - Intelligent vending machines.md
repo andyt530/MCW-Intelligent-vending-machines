@@ -1,10 +1,17 @@
 ﻿![](images/HeaderPic.png "Microsoft Cloud Workshops")
 
-# Intelligent vending machines
+<div class="MCWHeader1">
+Intelligent vending machines
+</div>
 
-## Hands-on lab step-by-step
+<div class="MCWHeader2">
+Hands-on lab step-by-step
+</div>
 
-## March 2018
+<div class="MCWHeader3">
+March 2018
+</div>
+
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
 
@@ -15,55 +22,51 @@ The names of manufacturers, products, or URLs are provided for informational pur
 
 Microsoft and the trademarks listed at https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
-## Contents
+**Contents**
 
 <!-- TOC -->
 
-- [Intelligent vending machines](#intelligent-vending-machines)
-    - [Hands-on lab step-by-step](#hands-on-lab-step-by-step)
-    - [March 2018](#march-2018)
-    - [Contents](#contents)
 - [Intelligent vending machines hands-on lab step-by-step](#intelligent-vending-machines-hands-on-lab-step-by-step)
     - [Abstract and learning objectives](#abstract-and-learning-objectives)
     - [Overview](#overview)
     - [Solution architecture](#solution-architecture)
     - [Requirements](#requirements)
     - [Before the hands-on lab](#before-the-hands-on-lab)
-        - [Task 1: Provision an R Server on HDInsight with Spark cluster](#task-1--provision-an-r-server-on-hdinsight-with-spark-cluster)
-        - [Task 2: Setup a lab virtual machine (VM)](#task-2--setup-a-lab-virtual-machine-vm)
-        - [Task 3: Install Power BI Desktop on the lab VM](#task-3--install-power-bi-desktop-on-the-lab-vm)
-        - [Task 4: Prepare an SSH client](#task-4--prepare-an-ssh-client)
-        - [Task 5: Install R Tools for Visual Studio 2017](#task-5--install-r-tools-for-visual-studio-2017)
-    - [Exercise 1: Environment setup](#exercise-1--environment-setup)
-        - [Task 1: Download and open the vending machines starter project](#task-1--download-and-open-the-vending-machines-starter-project)
-        - [Task 2: Provision IoT Hub](#task-2--provision-iot-hub)
-        - [Task 3: Create Microsoft Machine Learning Server on Linux](#task-3--create-microsoft-machine-learning-server-on-linux)
-        - [Task 4: Create Storage Account](#task-4--create-storage-account)
-        - [Task 5: Provision Cognitive Services Face API](#task-5--provision-cognitive-services-face-api)
-        - [Task 6: Provision SQL Database](#task-6--provision-sql-database)
-    - [Exercise 2: Create Dynamic Pricing Model](#exercise-2--create-dynamic-pricing-model)
-        - [Task 1: Create a model locally](#task-1--create-a-model-locally)
-        - [Task 2: Try a prediction locally](#task-2--try-a-prediction-locally)
-        - [Task 3: Create the model in R Server on HDInsight](#task-3--create-the-model-in-r-server-on-hdinsight)
-        - [Task 4: Create predictive service in R Server Operationalization](#task-4--create-predictive-service-in-r-server-operationalization)
-    - [Exercise 3: Implement dynamic pricing](#exercise-3--implement-dynamic-pricing)
-        - [Task 1: Implement photo uploads to Azure Storage](#task-1--implement-photo-uploads-to-azure-storage)
-        - [Task 2: Invoke Face API](#task-2--invoke-face-api)
-        - [Task 3: Invoke pricing model](#task-3--invoke-pricing-model)
-        - [Task 4: Configure the Simulator](#task-4--configure-the-simulator)
-        - [Task 5: Test dynamic pricing in Simulator](#task-5--test-dynamic-pricing-in-simulator)
-    - [Exercise 4: Implement purchasing](#exercise-4--implement-purchasing)
-        - [Task 1: Create the transactions table](#task-1--create-the-transactions-table)
-        - [Task 2: Configure the Simulator](#task-2--configure-the-simulator)
-        - [Task 3: Test purchasing](#task-3--test-purchasing)
-    - [Exercise 5: Implement device command and control](#exercise-5--implement-device-command-and-control)
-        - [Task 1: Listen for control messages](#task-1--listen-for-control-messages)
-        - [Task 2: Send control messages](#task-2--send-control-messages)
-        - [Task 3: Configure the DeviceControlConsole and the Simulator](#task-3--configure-the-devicecontrolconsole-and-the-simulator)
-    - [Exercise 6: Analytics with Power BI Desktop](#exercise-6--analytics-with-power-bi-desktop)
-        - [Task 1: Build the query and create the visualization](#task-1--build-the-query-and-create-the-visualization)
+        - [Task 1: Provision an R Server on HDInsight with Spark cluster](#task-1-provision-an-r-server-on-hdinsight-with-spark-cluster)
+        - [Task 2: Setup a lab virtual machine (VM)](#task-2-setup-a-lab-virtual-machine-vm)
+        - [Task 3: Install Power BI Desktop on the lab VM](#task-3-install-power-bi-desktop-on-the-lab-vm)
+        - [Task 4: Prepare an SSH client](#task-4-prepare-an-ssh-client)
+        - [Task 5: Install R Tools for Visual Studio 2017](#task-5-install-r-tools-for-visual-studio-2017)
+    - [Exercise 1: Environment setup](#exercise-1-environment-setup)
+        - [Task 1: Download and open the vending machines starter project](#task-1-download-and-open-the-vending-machines-starter-project)
+        - [Task 2: Provision IoT Hub](#task-2-provision-iot-hub)
+        - [Task 3: Create Microsoft Machine Learning Server on Linux](#task-3-create-microsoft-machine-learning-server-on-linux)
+        - [Task 4: Create Storage Account](#task-4-create-storage-account)
+        - [Task 5: Provision Cognitive Services Face API](#task-5-provision-cognitive-services-face-api)
+        - [Task 6: Provision SQL Database](#task-6-provision-sql-database)
+    - [Exercise 2: Create Dynamic Pricing Model](#exercise-2-create-dynamic-pricing-model)
+        - [Task 1: Create a model locally](#task-1-create-a-model-locally)
+        - [Task 2: Try a prediction locally](#task-2-try-a-prediction-locally)
+        - [Task 3: Create the model in R Server on HDInsight](#task-3-create-the-model-in-r-server-on-hdinsight)
+        - [Task 4: Create predictive service in R Server Operationalization](#task-4-create-predictive-service-in-r-server-operationalization)
+    - [Exercise 3: Implement dynamic pricing](#exercise-3-implement-dynamic-pricing)
+        - [Task 1: Implement photo uploads to Azure Storage](#task-1-implement-photo-uploads-to-azure-storage)
+        - [Task 2: Invoke Face API](#task-2-invoke-face-api)
+        - [Task 3: Invoke pricing model](#task-3-invoke-pricing-model)
+        - [Task 4: Configure the Simulator](#task-4-configure-the-simulator)
+        - [Task 5: Test dynamic pricing in Simulator](#task-5-test-dynamic-pricing-in-simulator)
+    - [Exercise 4: Implement purchasing](#exercise-4-implement-purchasing)
+        - [Task 1: Create the transactions table](#task-1-create-the-transactions-table)
+        - [Task 2: Configure the Simulator](#task-2-configure-the-simulator)
+        - [Task 3: Test purchasing](#task-3-test-purchasing)
+    - [Exercise 5: Implement device command and control](#exercise-5-implement-device-command-and-control)
+        - [Task 1: Listen for control messages](#task-1-listen-for-control-messages)
+        - [Task 2: Send control messages](#task-2-send-control-messages)
+        - [Task 3: Configure the DeviceControlConsole and the Simulator](#task-3-configure-the-devicecontrolconsole-and-the-simulator)
+    - [Exercise 6: Analytics with Power BI Desktop](#exercise-6-analytics-with-power-bi-desktop)
+        - [Task 1: Build the query and create the visualization](#task-1-build-the-query-and-create-the-visualization)
     - [After the hands-on lab](#after-the-hands-on-lab)
-        - [Task 1: Delete the resource group](#task-1--delete-the-resource-group)
+        - [Task 1: Delete the resource group](#task-1-delete-the-resource-group)
 
 <!-- /TOC -->
 
