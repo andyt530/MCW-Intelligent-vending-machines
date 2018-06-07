@@ -35,7 +35,7 @@ In this task, you will run an Azure Resource Manager (ARM) template to provision
 
 1. Select the **Deploy to Azure** button below to launch the script in a Custom deployment blade in the Azure portal.
 
-    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2FMCW-Intelligent-Vending-Machines%2Fmaster%2FHOL%2Fdeployment-template%2Fazure-deploy.json" target="_blank">
+    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2FMCW-Intelligent-Vending-Machines%2Fmaster%2FHands-on-lab%2Fdeployment-template%2Fazure-deploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
     </a>
 
@@ -223,6 +223,6 @@ In this task, you will perform some configuration on the Machine Learning Server
 You are now ready to complete the hands-on lab. Select a guide below to get started, or you can return to the overview page for the lab.
 
 * Complete Hands-on lab
-  * [Step-by-step guide](./Step-by-step.md)
-  * [Unguided guide](./Unguided.md)
+  * [Step-by-step guide](./HOL-step-by-step-Intelligent-vending-machines.md)
+  * [Unguided guide](./HOL-unguided-Intelligent-vending-machines.md)
 * Return to [Hands-on lab readme](./readme.md)
