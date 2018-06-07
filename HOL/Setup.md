@@ -136,7 +136,7 @@ Trey Research has provided a starter solution for you. They have asked you to us
 
 1. From your LabVM, download the starter project by downloading a .zip copy of the Intelligent vending machines GitHub repo.
 
-2. In a web browser, navigate to the [Intelligent Vending Machines MCW repo](https://github.com/Microsoft/MCW-Intelligent-Vending-Machines).
+2. In a web browser, navigate to the [Intelligent vending machines MCW repo](https://github.com/Microsoft/MCW-Intelligent-vending-machines).
 
 3. On the repo page, select **Clone or download**, then select **Download ZIP**.
 
