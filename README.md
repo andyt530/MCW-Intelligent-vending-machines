@@ -1,49 +1,44 @@
-# Abstract
+# Intelligent vending machines
 
-## Workshop
+[Download Cloud Workshop](https://github.com/Microsoft/MCW-Intelligent-vending-machines/archive/master.zip)
 
-In this workshop, attendees will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning app, and real-time analytics with SQL Database in-memory and columnar indexing.
+Trey Research Inc. looks at the old way of doing things in retail and introduces innovative experiences that delight customers and drive sales. Their latest initiative focuses on intelligent vending machines that support commerce, engagement analytics, and intelligent promotions.
 
-In addition, attendees will learn to:
+## Target Audience
 
--   Enable real-time analytics with SQL Database in-memory and columnar indexing
+* Application developer
+* AI Developer
 
--   Implement distributed machine learning with R Server for HDInsight & Microsoft R Server Operationalization
+## Abstract
 
--   Perform facial image processing
+### Workshop
 
--   Wrangle data in Power BI Desktop
+In this workshop, you will explore an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
-## Whiteboard Design Session
-TBD
+### Whiteboard design session
 
-## Hand-on Lab
-TBD
+In this whiteboard design session, you will design an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
+### Hands-on lab
 
-## Azure services and related products
-- Azure IoT Hub
-- Microsoft R Server
-- Azure Machine Learning
-- Azure Cognitive Services
-- Azure HDInsight Machine Learning Services
-- Azure Storage
-- Azure Data Lake Store
-- Power BI
-- Azure App Services
+In this hands-on lab, you will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
+## Azure Services and Related Products
 
-# Contributing
+* Azure App Services
+* Azure Blob Storage
+* Azure SQL Database
+* Cognitive Services Face API
+* Data Lake Store
+* IoT Hub
+* Microsoft Machine Learning Server
+* Power BI Desktop
+* R Server cluster on HDInsight
+* R Tools for Visual Studio 2017
+* Visual Studio 2017
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+## Azure Solution
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+## Related References
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
+[MCW](https://github.com/Microsoft/MCW)
