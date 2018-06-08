@@ -17,7 +17,7 @@ In this workshop, you will explore an IoT solution for intelligent vending machi
 
 ### Whiteboard design session
 
-In this whiteboard design session, you will design an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
+In this whiteboard design session, you will work with a group to design an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
 ### Hands-on lab
 
