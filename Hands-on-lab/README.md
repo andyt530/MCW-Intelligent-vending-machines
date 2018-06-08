@@ -29,7 +29,7 @@ Below is a diagram of the solution architecture you will build in this lab. Plea
   * Azure SDK 2.9 or later (Included with Visual Studio 2017)
   * [R Tools for Visual Studio](https://aka.ms/rtvs-current) 0.3.2 or later
   * [Power BI Desktop](https://powerbi.microsoft.com/desktop) (June 2016 build or later)
-  * A running R Server on HD Insight Spark cluster (see [Before the Hands-on Lab](#before-the-hands-on-lab))
+  * A running R Server on HD Insight Spark cluster (see [Before the hands-on lab](#before-the-hands-on-lab))
 
 ## Before the hands-on lab
 
