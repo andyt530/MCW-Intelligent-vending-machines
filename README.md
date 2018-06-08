@@ -4,7 +4,7 @@
 
 Trey Research Inc. looks at the old way of doing things in retail and introduces innovative experiences that delight customers and drive sales. Their latest initiative focuses on intelligent vending machines that support commerce, engagement analytics, and intelligent promotions.
 
-## Target Audience
+## Target audience
 
 * Application developer
 * AI Developer
@@ -23,7 +23,7 @@ In this whiteboard design session, you will work with a group to design an IoT s
 
 In this hands-on lab, you will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
-## Azure Services and Related Products
+## Azure services and related products
 
 * Azure App Services
 * Azure Blob Storage
@@ -37,8 +37,8 @@ In this hands-on lab, you will implement an IoT solution for intelligent vending
 * R Tools for Visual Studio 2017
 * Visual Studio 2017
 
-## Azure Solution
+## Azure solution
 
-## Related References
+## Related references
 
 [MCW](https://github.com/Microsoft/MCW)
