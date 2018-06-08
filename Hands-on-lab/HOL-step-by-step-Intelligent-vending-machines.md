@@ -557,7 +557,7 @@ To provision access to the Face API (which provides demographic information abou
 
 3. Save the `App.config`. The updated `App.config` file settings should look similar to the following:
 
-    ![Screenshot of the App.config file setting. At this time, we are unable to capture all of the information in the window. Future versions of this course should address this.](./media/visual-studio-simulator-project-app-config.png "App.config file setting")
+    ![Screenshot of the App.config file setting.](./media/visual-studio-simulator-project-app-config.png "App.config file setting")
 
 ### Task 6: Test dynamic pricing in Simulator
 
@@ -943,7 +943,7 @@ In this exercise, you will use Power BI Desktop to query purchase data from the 
 
 21. Your completed visualization summarizing the most profitable minutes in each hour should appear as follows:
 
-    ![Screenshot of a stacked column chart detailing the purchase price by minute. At this time, we are unable to capture all of the information in the chart. Future versions of this course should address this.](./media/power-bi-desktop-visualizations-stacked-column-chart-tile.png "stacked column chart")
+    ![Screenshot of a stacked column chart detailing the purchase price by minute.](./media/power-bi-desktop-visualizations-stacked-column-chart-tile.png "stacked column chart")
 
 ## After the hands-on lab
 

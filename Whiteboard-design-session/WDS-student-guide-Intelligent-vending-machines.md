@@ -86,7 +86,7 @@ Trey Research realizes that their vending machines and the cloud are a perfect m
 
 ### Infographic for common scenarios
 
-![Screenshot of a sample Internet of Things workflow, which is broken into On-Premises and Azure services. At this time, we are unable to capture all of the information in the slide. Future versions of this course should address this.](./media/common-scenarios.png "Common scenarios for Internet of Things")
+![Screenshot of a sample Internet of Things workflow, which is broken into On-Premises and Azure services.](./media/common-scenarios.png "Common scenarios for Internet of Things")
 
 ## Step 2: Design a proof of concept solution
 

@@ -187,7 +187,7 @@ Trey Research realizes that their vending machines and the cloud are a perfect m
 
 #### Infographic for common scenarios
 
-![Screenshot of a sample Internet of Things workflow, which is broken into On-Premises and Azure services. At this time, we are unable to capture all of the information in the slide. Future versions of this course should address this.](./media/common-scenarios.png "Common scenarios for Internet of Things")
+![Screenshot of a sample Internet of Things workflow, which is broken into On-Premises and Azure services.](./media/common-scenarios.png "Common Internet of Things scenarios")
 
 ### Step 2: Design a proof of concept solution
 
@@ -344,7 +344,7 @@ Tables reconvene with the larger group to hear a SME share the preferred solutio
 
     The intelligent promotions solution begins when a customer walks up to a vending machine. The machine takes a picture of the customer and sends it to a web service hosted in an API App. The API App integrates the Face API to acquire the demographics of the person in the photo. It can then invoke the dynamic pricing machine learning model hosted either in Azure ML or in Microsoft Machine Learning Server Operationalization, to get the recommended product and price. Finally, all computed demographics and recommendations should be saved to Azure Data Lake Store to be able to improve the training of the Machine Learning model built with R and trained on R Server on HDInsight.
 
-    ![Screenshot of an Intelligent promotions solution diagram, which includes API App, Blob Storage, ML Model, RServer on HDInsight, Data Lake Store, and Face API. At this time, we are unable to capture all of the information in the diagram. Future versions of this course should address this.](./media/preferred-solution-intelligent-promotions.png "Intelligent promotions solution")
+    ![Screenshot of an Intelligent promotions solution diagram, which includes API App, Blob Storage, ML Model, RServer on HDInsight, Data Lake Store, and Face API.](./media/preferred-solution-intelligent-promotions.png "Intelligent promotions solution")
 
     > **NOTE**: The preferred solution is only one of many possible, viable approaches.
 

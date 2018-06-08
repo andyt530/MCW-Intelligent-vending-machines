@@ -342,7 +342,7 @@ In this exercise, you will use Power BI Desktop to query purchase data from the 
 
 * Your completed visualization summarizing the most profitable minutes in each hour should appear as follows:
 
-    ![Screenshot of a stacked column chart detailing the purchase price by minute. At this time, we are unable to capture all of the information in the chart. Future versions of this course should address this.](./media/power-bi-desktop-visualizations-stacked-column-chart-tile.png "stacked column chart")
+    ![Screenshot of a stacked column chart detailing the purchase price by minute.](./media/power-bi-desktop-visualizations-stacked-column-chart-tile.png "stacked column chart")
 
 ## After the hands-on lab
 
