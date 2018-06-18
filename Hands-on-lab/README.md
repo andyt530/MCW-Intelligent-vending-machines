@@ -1,10 +1,9 @@
 # Intelligent vending machines hands-on lab
 
-Trey Research Inc. looks at the old way of doing things in retail and introduces innovative experiences that delight customers and drive sales. Their latest initiative focuses on intelligent vending machines that support commerce, engagement analytics, and intelligent promotions.
-
 ## Contents
 
 * [Abstract](#abstract)
+* [Overview](#overview)
 * [Solution architecture](#solution-architecture)
 * [Requirements](#requirements)
 * [Before the hands-on lab](#before-the-hands-on-lab)
@@ -15,6 +14,10 @@ Trey Research Inc. looks at the old way of doing things in retail and introduces
 In this hands-on lab, you will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
 At the end of this hands-on lab, you will be better able to build IoT solutions leveraging cloud-based machine learning services and real-time analytics.
+
+## Overview
+
+Trey Research Inc. looks at the old way of doing things in retail and introduces innovative experiences that delight customers and drive sales. Their latest initiative focuses on intelligent vending machines that support commerce, engagement analytics, and intelligent promotions.
 
 ## Solution architecture
 
