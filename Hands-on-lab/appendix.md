@@ -52,7 +52,7 @@ In this task, you will use the Azure Portal to provision an R Server on HDInsigh
 
         * Check the box next to **R Studio community edition for R Server**. Note that the Operating System option for the Spark cluster is fixed to Linux
 
-            ![Screenshot of the Cluster configuration dialog box. Cluster type is set to \"R Server,\" and Version is set to \"R Server 9.1 (HDI 3.6).\" Under Features, under Available, the check box is selected for \"R Studio community edition for R Server.\"](./media/hdinsight-cluster-configuration.png)
+            ![Screenshot of the Cluster configuration dialog box. Cluster type is set to "R Server," and Version is set to "R Server 9.1 (HDI 3.6)." Under Features, under Available, the check box is selected for "R Studio community edition for R Server."](./media/hdinsight-cluster-configuration.png)
 
         * Select **Select** to close the Cluster configuration blade
 
@@ -144,7 +144,7 @@ In this task, you will use the Azure Portal to provision an R Server on HDInsigh
 
     * Select **OK** to move to the next step.
 
-3. On the Choose a size blade, ensure the Supported disk type is set to SSD, and select View all. This machine won't be doing much heavy lifting, so selecting DS2_V3 Standard is a good baseline option.
+3. On the Choose a size blade, select DS2_V3 Standard.
 
     ![On the Choose a size blade, the D2S_V3 Standard size is selected.](./media/virtual-machine-choose-a-size-blade.png "Choose a size blade")
 

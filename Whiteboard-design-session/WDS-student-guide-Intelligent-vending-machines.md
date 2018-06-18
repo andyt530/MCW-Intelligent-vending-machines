@@ -30,6 +30,8 @@ Updated May 2018
 
 In this whiteboard design session, you will work with a group to design an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
+At the end of this whiteboard design session, you will be better able to architect IoT solutions leveraging cloud-based machine learning services and real-time analytics.
+
 ## Step 1: Review the customer case study
 
 **Outcome**: Analyze your customer’s needs.

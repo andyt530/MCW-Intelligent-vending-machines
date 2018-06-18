@@ -15,13 +15,19 @@ Trey Research Inc. looks at the old way of doing things in retail and introduces
 
 In this workshop, you will explore an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
+At the end of this workshop, you will be better able to design IoT solutions leveraging cloud-based machine learning services and real-time analytics.
+
 ### Whiteboard design session
 
 In this whiteboard design session, you will work with a group to design an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
+At the end of this whiteboard design session, you will be better able to architect IoT solutions leveraging cloud-based machine learning services and real-time analytics.
+
 ### Hands-on lab
 
 In this hands-on lab, you will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
+
+At the end of this hands-on lab, you will be better able to build IoT solutions leveraging cloud-based machine learning services and real-time analytics.
 
 ## Azure services and related products
 
