@@ -150,7 +150,9 @@ In this task, you will use the Azure Portal to provision an R Server on HDInsigh
 
 4. Select **Select** to move on to the Settings blade.
 
-5. Accept all the default values on the Settings blade, and select **OK**.
+5. On the Settings blade, select **RDP (3389)** from the Select public inbound ports drop down, then select **OK**.
+
+    ![On the Create virtual machine settings blade, RDP (3389) is selected in the public inbound ports drop down.](media/virtual-machine-settings-inbound-ports.png "Open RDP on inbound port 3389")
 
 6. Select **Create** on the Create blade to provision the virtual machine.
 
