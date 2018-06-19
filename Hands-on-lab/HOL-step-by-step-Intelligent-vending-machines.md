@@ -13,14 +13,14 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 Updated May 2018
 
-In this hands-on lab, you will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
-
-At the end of this hands-on lab, you will be better able to build IoT solutions leveraging cloud-based machine learning services and real-time analytics.
-
 If you have not yet completed the steps to set up your environment in [Before the hands-on lab](./Setup.md), you will need to do that before proceeding.
 
 ## Contents
 
+* [Abstract](#abstract)
+* [Overview](#overview)
+* [Solution architecture](#solution-architecture)
+* [Requirements](#requirements)
 * [Exercise 1: Create Dynamic Pricing Model](#exercise-1-create-dynamic-pricing-model)
   * [Task 1: Create a model locally](#task-1-create-a-model-locally)
   * [Task 2: Try a prediction locally](#task-2-try-a-prediction-locally)
@@ -45,6 +45,33 @@ If you have not yet completed the steps to set up your environment in [Before th
 * [Exercise 5: Analytics with Power BI Desktop](#exercise-5-analytics-with-power-bi-desktop)
   * [Task 1: Build the query and create the visualization](#task-1-build-the-query-and-create-the-visualization)
 * [After the hands-on lab](#after-the-hands-on-lab)
+
+## Abstract
+
+In this hands-on lab, you will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
+
+At the end of this hands-on lab, you will be better able to build IoT solutions leveraging cloud-based machine learning services and real-time analytics.
+
+## Overview
+
+Trey Research Inc. looks at the old way of doing things in retail and introduces innovative experiences that delight customers and drive sales. Their latest initiative focuses on intelligent vending machines that support commerce, engagement analytics, and intelligent promotions.
+
+## Solution architecture
+
+Below is a diagram of the solution architecture you will build in this lab. Please study this carefully, so you understand the whole of the solution as you are working on the various components.
+
+![Diagram of the preferred solution. From a high-level, the commerce solution uses an API App to host the Payments web service with which the Vending Machine interacts to conduct purchase transactions. The Payment Web API invokes a 3rd party payment gateway as needed for authorizing and capturing credit card payments, and logs the purchase transaction to SQL DB. The data for these purchase transactions is stored using an In-Memory table with a Columnar Index, which will support the write-heavy workload while still allowing analytics to operate, such as queries coming from Power BI Desktop.](./media/preferred-solution-architecture.png "Preferred high-level architecture")
+
+## Requirements
+
+* Microsoft Azure subscription must be pay-as-you-go or MSDN
+  * Trial subscriptions will not work
+* A virtual machine configured with:
+  * Visual Studio Community 2017 15.6 or later
+  * Azure SDK 2.9 or later (Included with Visual Studio 2017)
+  * [R Tools for Visual Studio](https://aka.ms/rtvs-current) 0.3.2 or later
+  * [Power BI Desktop](https://powerbi.microsoft.com/desktop) (June 2016 build or later)
+  * A running R Server on HD Insight Spark cluster (see [Before the hands-on lab](#before-the-hands-on-lab))
 
 ## Exercise 1: Create Dynamic Pricing Model
 

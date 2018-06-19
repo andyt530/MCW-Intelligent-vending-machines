@@ -14,6 +14,7 @@ In the Before the hands-on lab exercise, you will set up your environment for us
 * [Task 4: Download the vending machines starter project](#task-4-download-the-vending-machines-starter-project)
 * [Task 5: Set up Photos Storage account containers](task-5-set-up-photos-storage-account-containers)
 * [Task 6: Configure Microsoft Machine Learning Server on Linux](task-6-configure-microsoft-machine-learning-server-on-linux)
+* [Next steps](#next-steps)
 
 ## Task 1: Execute ARM template to provision Azure resources
 
