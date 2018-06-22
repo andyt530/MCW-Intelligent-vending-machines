@@ -4,15 +4,15 @@ This appendix provides step-by-step instructions for manually creating the lab r
 
 ## Contents
 
-* [Task 1: Provision a resource group](#task-1-provision-a-resource-group)
-* [Task 2: Provision an R Server on HDInsight with Spark cluster](#task-2-provision-an-r-server-on-hdinsight-with-spark-cluster)
-* [Task 3: Setup a lab virtual machine (VM)](#task-3-setup-a-lab-virtual-machine)
-* [Task 4 Install Power BI Desktop on the Lab VM](#task-4-install-power-bi-desktop-on-the-lab-vm)
-* [Task 5: Install an SSH client](#task-5-install-an-ssh-client)
-* [Task 6: Install R Tools for Visual Studio 2017](#task-6-install-r-tools-for-visual-studio-2017)
-* [Task 7: Create Storage Account](#task-7-create-storage-account)
-* [Task 8: Create Microsoft Machine Learning Server on Linux](#task-8-create-microsoft-machine-learning-server-on-linux)
-* [Task 9: Provision SQL Database](#task-9-provision-sql-database)
+- [Task 1: Provision a resource group](#task-1-provision-a-resource-group)
+- [Task 2: Provision an R Server on HDInsight with Spark cluster](#task-2-provision-an-r-server-on-hdinsight-with-spark-cluster)
+- [Task 3: Setup a lab virtual machine (VM)](#task-3-setup-a-lab-virtual-machine)
+- [Task 4 Install Power BI Desktop on the Lab VM](#task-4-install-power-bi-desktop-on-the-lab-vm)
+- [Task 5: Install an SSH client](#task-5-install-an-ssh-client)
+- [Task 6: Install R Tools for Visual Studio 2017](#task-6-install-r-tools-for-visual-studio-2017)
+- [Task 7: Create Storage Account](#task-7-create-storage-account)
+- [Task 8: Create Microsoft Machine Learning Server on Linux](#task-8-create-microsoft-machine-learning-server-on-linux)
+- [Task 9: Provision SQL Database](#task-9-provision-sql-database)
 
 ## Task 1: Provision a resource group
 
@@ -20,15 +20,15 @@ In this task, you will create an Azure resource group for the resources used thr
 
 1. In the [Azure portal](https://portal.azure.com), select **Resource groups**, select **+Add**, then enter the following in the Create an empty resource group blade:
 
-    * **Name**: Enter hands-on-lab-SUFFIX
+    - **Name**: Enter hands-on-lab-SUFFIX
 
-    * **Subscription**: Select the subscription you are using for this hands-on lab
+    - **Subscription**: Select the subscription you are using for this hands-on lab
 
-    * **Resource group location**: Select the region you would like to use for resources in this hands-on lab. Remember this location so you can use it for the other resources you'll provision throughout this lab.
+    - **Resource group location**: Select the region you would like to use for resources in this hands-on lab. Remember this location so you can use it for the other resources you'll provision throughout this lab.
 
         ![Add Resource group Resource groups is highlighted in the navigation pane of the Azure portal, +Add is highlighted in the Resource groups blade, and "hands-on-labs" is entered into the Resource group name box on the Create an empty resource group blade.](./media/create-resource-group.png "Create resource group")
 
-    * Select **Create**.
+    - Select **Create**.
 
 ## Task 2: Provision an R Server on HDInsight with Spark cluster
 
@@ -40,57 +40,57 @@ In this task, you will use the Azure Portal to provision an R Server on HDInsigh
 
 2. On the Basics blade, enter the following settings:
 
-    * **Cluster name**: Enter a unique name (verified by the green checkmark)
+    - **Cluster name**: Enter a unique name (verified by the green checkmark)
 
-    * **Subscription**: Select the Azure subscription into which you want to deploy the cluster
+    - **Subscription**: Select the Azure subscription into which you want to deploy the cluster
 
-    * **Custer type**: Select Configure required settings
+    - **Custer type**: Select Configure required settings
 
         ![The Azure portal is shown Cluster type Configured required settings menu.](./media/hdinsight-cluster-type-config.png)
 
-        * On the Cluster configuration blade, set the Cluster type to **R Server** and the Version to R Server **9.1 (HDI 3.6)**
+        - On the Cluster configuration blade, set the Cluster type to **R Server** and the Version to R Server **9.1 (HDI 3.6)**
 
-        * Check the box next to **R Studio community edition for R Server**. Note that the Operating System option for the Spark cluster is fixed to Linux
+        - Check the box next to **R Studio community edition for R Server**. Note that the Operating System option for the Spark cluster is fixed to Linux
 
             ![Screenshot of the Cluster configuration dialog box. Cluster type is set to "R Server," and Version is set to "R Server 9.1 (HDI 3.6)." Under Features, under Available, the check box is selected for "R Studio community edition for R Server."](./media/hdinsight-cluster-configuration.png)
 
-        * Select **Select** to close the Cluster configuration blade
+        - Select **Select** to close the Cluster configuration blade
 
-    * **Cluster login username**: Leave as admin
+    - **Cluster login username**: Leave as admin
 
-    * **Cluster login password**: Enter Password.1!!
+    - **Cluster login password**: Enter Password.1!!
 
-    * **Secure Shell (SSH) username**: Set to remoteuser (**this is required**)
+    - **Secure Shell (SSH) username**: Set to remoteuser (**this is required**)
 
-    * **Use same password as cluster login**: Ensure the checkbox is checked
+    - **Use same password as cluster login**: Ensure the checkbox is checked
 
-    * **Resource group**: Choose Use existing, and select the hands-on-lab-SUFFIX resource group
+    - **Resource group**: Choose Use existing, and select the hands-on-lab-SUFFIX resource group
 
-    * **Location**: Select the location you are using for resources in this hands-on lab
+    - **Location**: Select the location you are using for resources in this hands-on lab
 
         ![Screenshot of the Basics blade, with fields set to the previously mentioned settings.](./media/hdinsight-basics-blade.png "HDInsight Basics blade")
 
-    * Select **Next** to move on to the storage settings
+    - Select **Next** to move on to the storage settings
 
 3. On the Storage blade:
 
-    * **Primary storage type**: Leave set to Azure Storage
+    - **Primary storage type**: Leave set to Azure Storage
 
-    * **Selection Method**: Leave set to My subscriptions
+    - **Selection Method**: Leave set to My subscriptions
 
-    * **Select a Storage account**: Select Create new, and enter a unique name for the storage account, such as labstorageSUFFIX
+    - **Select a Storage account**: Select Create new, and enter a unique name for the storage account, such as labstorageSUFFIX
 
-    * **Default container**: Set to the *name of your cluster*
+    - **Default container**: Set to the *name of your cluster*
 
-    * **Additional storage accounts**: Leave un-configured.
+    - **Additional storage accounts**: Leave un-configured.
 
-    * **Data Lake Store access**: Leave un-configured.
+    - **Data Lake Store access**: Leave un-configured.
 
-    * **Metastore Settings**: Leave blank.
+    - **Metastore Settings**: Leave blank.
 
         ![Screenshot of the Storage blade, with fields set to the previously mentioned settings.](./media/hdinsight-storage-blade.png "Storage blade")
 
-    * Select **Next** to move on to the Cluster summary.
+    - Select **Next** to move on to the Cluster summary.
 
 4. On the Cluster Summary blade, select Edit next to Cluster Size.
 
@@ -98,19 +98,19 @@ In this task, you will use the Azure Portal to provision an R Server on HDInsigh
 
 5. On the Cluster size blade, enter the following:
 
-    * **Number of worker nodes**: Enter 2
+    - **Number of worker nodes**: Enter 2
 
-    * **Worker node size**: Select D12 v2, then select Select
+    - **Worker node size**: Select D12 v2, then select Select
 
-    * **Head node size**: Select D12 v2, then select Select
+    - **Head node size**: Select D12 v2, then select Select
 
-    * **Zookeeper node sizes**: Leave set to A2
+    - **Zookeeper node sizes**: Leave set to A2
 
-    * **R-Server edge node size**: Select D12 v2, then select Select
+    - **R-Server edge node size**: Select D12 v2, then select Select
 
         ![Screenshot of the Cluster size blade, with fields set to the previously mentioned settings.](./media/hdinsight-cluster-size-blade.png "Cluster size blade")
 
-    * Select **Next**.
+    - Select **Next**.
 
 6. Select **Next** on the Advanced settings blade to move to the Cluster summary blade.
 
@@ -126,23 +126,23 @@ In this task, you will use the Azure Portal to provision an R Server on HDInsigh
 
 2. Set the following configuration on the Basics tab.
 
-    * **Name**: Enter LabVM
+    - **Name**: Enter LabVM
 
-    * **VM disk type**: Select SSD
+    - **VM disk type**: Select SSD
 
-    * **User name**: Enter demouser
+    - **User name**: Enter demouser
 
-    * **Password**: Enter Password.1!!
+    - **Password**: Enter Password.1!!
 
-    * **Subscription**: Select the same subscription you are using for this hands-on lab
+    - **Subscription**: Select the same subscription you are using for this hands-on lab
 
-    * **Resource Group**: Select Use existing, and select the hands-on-lab-SUFFIX resource group
+    - **Resource Group**: Select Use existing, and select the hands-on-lab-SUFFIX resource group
 
-    * **Location**: Select the location you are using for resources in this hands-on lab
+    - **Location**: Select the location you are using for resources in this hands-on lab
 
         ![Screenshot of the Basics blade, with fields set to the previously mentioned settings.](./media/virtual-machine-basics-blade.png "Create virtual machine Basics blade")
 
-    * Select **OK** to move to the next step.
+    - Select **OK** to move to the next step.
 
 3. On the Choose a size blade, select DS2_V3 Standard.
 
@@ -244,29 +244,29 @@ In these steps, you will provision a storage account that will be used for stori
 
 2. On the Create storage account blade, enter the following values:
 
-    * **Name**: Enter a unique name, such as labstorageSUFFIX
+    - **Name**: Enter a unique name, such as labstorageSUFFIX
 
-    * **Deployment model**: Leave Resource Manager selected
+    - **Deployment model**: Leave Resource Manager selected
 
-    * **Account kind**: Select Storage (General purpose v1)
+    - **Account kind**: Select Storage (General purpose v1)
 
-    * **Location**: Select the location you are using for this hands-on lab
+    - **Location**: Select the location you are using for this hands-on lab
 
-    * **Replication**: Select to Locally-redundant storage (LRS)
+    - **Replication**: Select to Locally-redundant storage (LRS)
 
-    * **Performance**: Leave set to Standard
+    - **Performance**: Leave set to Standard
 
-    * **Secure transfer required**: Leave set to Disabled
+    - **Secure transfer required**: Leave set to Disabled
 
-    * **Subscription**: Select the subscription you are using for this hands-on lab
+    - **Subscription**: Select the subscription you are using for this hands-on lab
 
-    * **Resource group**: Choose Use existing, and select the hands-on-lab-SUFFIX resource group
+    - **Resource group**: Choose Use existing, and select the hands-on-lab-SUFFIX resource group
 
-    * **Virtual networks**: Leave set to Disabled
+    - **Virtual networks**: Leave set to Disabled
 
         ![The Create storage account blade is displayed, with the values specified above entered into the appropriate fields.](./media/storage-account-create.png "Create storage account")
 
-    * Select **Create**
+    - Select **Create**
 
 ## Task 8: Create Microsoft Machine Learning Server on Linux
 
@@ -278,25 +278,25 @@ In these steps, you will provision and configure a Virtual Machine running Micro
 
 2. In the Create virtual machine Basics blade, enter the following:
 
-    * **Name**: Enter LabMLServer
+    - **Name**: Enter LabMLServer
 
-    * **Vm disk type**: Select SSD
+    - **Vm disk type**: Select SSD
 
-    * **User name**: Enter radmin
+    - **User name**: Enter radmin
 
-    * **Authentication type**: Select Password
+    - **Authentication type**: Select Password
 
-    * **Password**: Enter and confirm the password, Password.1!!
+    - **Password**: Enter and confirm the password, Password.1!!
 
-    * **Subscription**: Select the subscription you are using for this hands-on lab
+    - **Subscription**: Select the subscription you are using for this hands-on lab
 
-    * **Resource group**: Choose Use existing, and select the hands-on-lab-SUFFIX resource group
+    - **Resource group**: Choose Use existing, and select the hands-on-lab-SUFFIX resource group
 
-    * **Location**: Select the location you are using for this hands-on lab
+    - **Location**: Select the location you are using for this hands-on lab
 
         ![Screenshot of the Basics blade, with fields set to the previously mentioned values.](./media/machine-learning-server-basics-blade.png "Machine Learning Server Basics blade")
 
-    * Select **OK** to move on to choosing a VM size.
+    - Select **OK** to move on to choosing a VM size.
 
 3. On the Choose a size blade, select **E2S_V3 Standard**, and select **Select**.
 
@@ -304,27 +304,27 @@ In these steps, you will provision and configure a Virtual Machine running Micro
 
 4. On the Settings blade, select **Network security group** (firewall).
 
-    * Click **Create new** under Choose network security group.
+    - Click **Create new** under Choose network security group.
 
-    * Enter a name, such as **my-r-nsg**.
+    - Enter a name, such as **my-r-nsg**.
 
-    * Select **Add an inbound rule**.
+    - Select **Add an inbound rule**.
 
         ![Screenshot of the Settings, Choose network security group, and Create network security group blades. In the settings blade, Network security group (firewall) is selected. In the Choose network security group blade, Create new is selected. In the Create network security group blade, + Add an inbound rule is highlighted.](./media/machine-learning-server-settings-blade.png "Settings, Choose network security group, and Create network security group Blades")
 
-    * On the Add inbound security rule dialog, enter the following (you may need to select Basic at the top of the Add inbound security rule dialog to switch from the Advanced view to the one displayed below):
+    - On the Add inbound security rule dialog, enter the following (you may need to select Basic at the top of the Add inbound security rule dialog to switch from the Advanced view to the one displayed below):
 
-        * **Service**: Select Custom
+        - **Service**: Select Custom
 
-        * **Port range**: 12800
+        - **Port range**: 12800
 
-        * **Priority**: 100
+        - **Priority**: 100
 
-        * **Name**: **Port_12800** (should be auto-generated)
+        - **Name**: **Port_12800** (should be auto-generated)
 
             ![Screenshot of the Add inbound security rule blade, with the Port ranges field highlighted and set to 12800.](./media/machine-learning-server-add-inbound-security-rule.png "Add inbound security rule blade")
 
-        * Select **OK**
+        - Select **OK**
 
 5. Select **OK** on the Create network security group blade.
 
@@ -344,36 +344,36 @@ In these steps, you will provision a SQL database to support the transactions an
 
 2. In the SQL Database blade, enter the following:
 
-    * **Database name**: Enter vending
+    - **Database name**: Enter vending
 
-    * **Subscription**: Select the subscription you are using for this hands-on lab
+    - **Subscription**: Select the subscription you are using for this hands-on lab
 
-    * **Resource Group**: Choose Use existing and select the hands-on-lab-SUFFIX resource group
+    - **Resource Group**: Choose Use existing and select the hands-on-lab-SUFFIX resource group
 
-    * **Select source**: Leave set to **Blank database**
+    - **Select source**: Leave set to **Blank database**
 
-    * **Server**: Select configure required settings, then select Create a new server
+    - **Server**: Select configure required settings, then select Create a new server
 
-        * **Server name**: Enter a unique server name, such as vendingmachinesSUFFIX
+        - **Server name**: Enter a unique server name, such as vendingmachinesSUFFIX
 
-        * **Server admin login**: Enter demouser
+        - **Server admin login**: Enter demouser
 
-        * **Password**: Enter Password.1!!
+        - **Password**: Enter Password.1!!
 
-        * **Location**: Select the location you are using for this hands-on lab
+        - **Location**: Select the location you are using for this hands-on lab
 
             ![On the SQL Database New server blade, the values specified above are entered into the appropriate fields.](./media/sql-database-new-server-blade.png "SQL Database New Server")
 
-        * Select **Select**
+        - Select **Select**
 
-    * **Want to use SQL elastic pool**: Choose Not now
+    - **Want to use SQL elastic pool**: Choose Not now
 
-    * **Pricing tier**: Change to **Premium P1**, and select **Apply**.
+    - **Pricing tier**: Change to **Premium P1**, and select **Apply**.
 
         ![The Configure Pricing tier blade for SQL Database is displayed, and Premium P1, 125 DTUs, 250 GB is selected.](./media/sql-database-pricing-tier.png "SQL Database Pricing tier")
 
-    * **Collation**: Leave set to the default value (SQL_Latin1_General_CP1_CI_AS)
+    - **Collation**: Leave set to the default value (SQL_Latin1_General_CP1_CI_AS)
 
         ![The SQL Database Create blade is displayed, and the values specified above are entered into the appropriate fields.](./media/sql-database-create.png "SQL Database Create")
 
-    * Select **Create**.
+    - Select **Create**.

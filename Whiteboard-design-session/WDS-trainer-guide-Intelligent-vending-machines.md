@@ -15,31 +15,31 @@ Updated May 2018
 
 ## Contents
 
-* [Trainer information](#trainer-information)
-  * [Role of the trainer](#role-of-the-trainer)
-  * [Whiteboard design session flow](#whiteboard-design-session-flow)
-  * [Before the whiteboard design session: How to prepare](#before-the-whiteboard-design-session-how-to-prepare)
-  * [During the whiteboard design session: Tips for an effective whiteboard design session](#during-the-whiteboard-design-session-tips-for-an-effective-whiteboard-design-session)
-* [Intelligent vending machines whiteboard design session student guide](#intelligent-vending-machines-whiteboard-design-session-student-guide)
-  * [Abstract](#abstract)
-  * [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
-    * [Customer situation](#customer-situation)
-    * [Customer needs](#customer-needs)
-    * [Customer objections](#customer-objections)
-    * [Infographic for common scenarios](#infographic-for-common-scenarios)
-  * [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
-  * [Step 3: Present the solution](#step-3-present-the-solution)
-  * [Wrap-up](#wrap-up)
-  * [Additional references](#additional-references)
-* [Intelligent vending machines whiteboard design session trainer guide](#intelligent-vending-machines-whiteboard-design-session-trainer-guide)
-  * [Step 1: Review the customer case study](#step-1-review-the-customer-case-study-1)
-  * [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution-1)
-  * [Step 3: Present the solution](#step-3-present-the-solution-1)
-  * [Wrap-up](#wrap-up)
-  * [Preferred target audience](#preferred-target-audience)
-  * [Preferred solution](#preferred-solution)
-  * [Checklist of preferred objection handling](#checklist-of-preferred-objection-handling)
-  * [Customer quote (to be read back to the attendees at the end)](#customer-quote-to-be-read-back-to-the-attendees-at-the-end)
+- [Trainer information](#trainer-information)
+  - [Role of the trainer](#role-of-the-trainer)
+  - [Whiteboard design session flow](#whiteboard-design-session-flow)
+  - [Before the whiteboard design session: How to prepare](#before-the-whiteboard-design-session-how-to-prepare)
+  - [During the whiteboard design session: Tips for an effective whiteboard design session](#during-the-whiteboard-design-session-tips-for-an-effective-whiteboard-design-session)
+- [Intelligent vending machines whiteboard design session student guide](#intelligent-vending-machines-whiteboard-design-session-student-guide)
+  - [Abstract](#abstract)
+  - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
+    - [Customer situation](#customer-situation)
+    - [Customer needs](#customer-needs)
+    - [Customer objections](#customer-objections)
+    - [Infographic for common scenarios](#infographic-for-common-scenarios)
+  - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
+  - [Step 3: Present the solution](#step-3-present-the-solution)
+  - [Wrap-up](#wrap-up)
+  - [Additional references](#additional-references)
+- [Intelligent vending machines whiteboard design session trainer guide](#intelligent-vending-machines-whiteboard-design-session-trainer-guide)
+  - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study-1)
+  - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution-1)
+  - [Step 3: Present the solution](#step-3-present-the-solution-1)
+  - [Wrap-up](#wrap-up)
+  - [Preferred target audience](#preferred-target-audience)
+  - [Preferred solution](#preferred-solution)
+  - [Checklist of preferred objection handling](#checklist-of-preferred-objection-handling)
+  - [Customer quote (to be read back to the attendees at the end)](#customer-quote-to-be-read-back-to-the-attendees-at-the-end)
 
 ## Trainer information
 
@@ -49,16 +49,16 @@ Thank you for taking time to support the whiteboard design sessions as a trainer
 
 An amazing trainer:
 
-* Creates a safe environment in which learning can take place.
-* Stimulates the participant's thinking.
-* Involves the participant in the learning process.
-* Manages the learning process (on time, on topic, and adjusting to benefit participants).
-* Ensures individual participant accountability.
-* Ties it all together for the participant.
-* Provides insight and experience to the learning process.
-* Effectively leads the whiteboard design session discussion.
-* Monitors quality and appropriateness of participant deliverables.
-* Effectively leads the feedback process.
+- Creates a safe environment in which learning can take place.
+- Stimulates the participant's thinking.
+- Involves the participant in the learning process.
+- Manages the learning process (on time, on topic, and adjusting to benefit participants).
+- Ensures individual participant accountability.
+- Ties it all together for the participant.
+- Provides insight and experience to the learning process.
+- Effectively leads the whiteboard design session discussion.
+- Monitors quality and appropriateness of participant deliverables.
+- Effectively leads the feedback process.
 
 ### Whiteboard design session flow
 
@@ -68,40 +68,40 @@ Each whiteboard design session uses the following flow:
 
 **Outcome**: Analyze your customer's needs
 
-* Customer's background, situation, needs and technical requirements
-* Current customer infrastructure and architecture
-* Potential issues, objectives and blockers
+- Customer's background, situation, needs and technical requirements
+- Current customer infrastructure and architecture
+- Potential issues, objectives and blockers
 
 #### Step 2: Design a proof of concept solution (60 minutes)
 
 **Outcome**: Prepare to present a solution for your target customer audience
 
-* Determine your target customer audience
-* Determine customer's business needs to address your solution
-* Design and diagram your solution
-* Prepare to present your solution
+- Determine your target customer audience
+- Determine customer's business needs to address your solution
+- Design and diagram your solution
+- Prepare to present your solution
 
 #### Step 3: Present the solution (30 minutes)
 
 **Outcome**: Present solution to your customer
 
-* Present solution
-* Respond to customer objections
-* Receive feedback
+- Present solution
+- Respond to customer objections
+- Receive feedback
 
 #### Wrap-up (15 minutes)
 
-* Review preferred solution
+- Review preferred solution
 
 ### Before the whiteboard design session: How to prepare
 
 Before conducting your first whiteboard design session:
 
-* Read the Student guide (including the case study) and Trainer guide
-* Become familiar with all key points and activities.
-* Plan the point you want to stress, which questions you want to drive, transitions, and be ready to answer questions.
-* Prior to the whiteboard design session, discuss the case study to pick up more ideas.
-* Make notes for later.
+- Read the Student guide (including the case study) and Trainer guide
+- Become familiar with all key points and activities.
+- Plan the point you want to stress, which questions you want to drive, transitions, and be ready to answer questions.
+- Prior to the whiteboard design session, discuss the case study to pick up more ideas.
+- Make notes for later.
 
 ### During the whiteboard design session: Tips for an effective whiteboard design session
 
@@ -111,9 +111,9 @@ Before conducting your first whiteboard design session:
 
 When participants are doing activities, you can **look ahead to refresh your memory**.
 
-* **Adjust activity and whiteboard design session pace** as needed to allow time for presenting, feedback, and sharing.
-* **Add examples, points, and stories** from your own experience. Think about stories you can share that help you make your points clearly and effectively.
-* **Consider creating a "parking lot"** to record issues or questions raised that are outside the scope of the whiteboard design session or can be answered later. Decide how you will address these issues, so you can acknowledge them without being derailed by them.
+- **Adjust activity and whiteboard design session pace** as needed to allow time for presenting, feedback, and sharing.
+- **Add examples, points, and stories** from your own experience. Think about stories you can share that help you make your points clearly and effectively.
+- **Consider creating a "parking lot"** to record issues or questions raised that are outside the scope of the whiteboard design session or can be answered later. Decide how you will address these issues, so you can acknowledge them without being derailed by them.
 
 **Have fun**! Encourage participants to have fun and share!
 
@@ -155,9 +155,9 @@ When it comes to commerce, they are looking at modernizing the handling of purch
 
 While commerce is of prime importance, Trey Research believes that understanding the events that led to a successful or unsuccessful purchase transaction are just as important. They want to be able to collect Engagement Telemetry that includes dwell times, impressions and conversions. These are defined as follows:
 
-* **Dwell Times**: a user "session", for a given subject. Dwell times indicate how long the user either interacted with the device or stood by examining the inventory/promotions. These metrics have a start time and duration.
-* **Impressions**: the time and type of promotion displayed
-* **Conversions**: when a recommendation is displayed, and a purchase transaction occurred, was the recommended product purchased or not?
+- **Dwell Times**: a user "session", for a given subject. Dwell times indicate how long the user either interacted with the device or stood by examining the inventory/promotions. These metrics have a start time and duration.
+- **Impressions**: the time and type of promotion displayed
+- **Conversions**: when a recommendation is displayed, and a purchase transaction occurred, was the recommended product purchased or not?
 
 The goal being that the data that their vending machine provides can paint a picture of the purchase funnel---that is understanding what products were viewed in a session, which was ultimately purchased, and which was not?
 
@@ -290,39 +290,39 @@ Tables reconvene with the larger group to hear a SME share the preferred solutio
 
 ### Step 1: Review the customer case study
 
-* Check in with your table participants to introduce yourself as the trainer.
-* Ask, "What questions do you have about the customer case study?"
-* Briefly review the steps and timeframes of the whiteboard design session.
-* Ready, set, go! Let the table participants begin.
+- Check in with your table participants to introduce yourself as the trainer.
+- Ask, "What questions do you have about the customer case study?"
+- Briefly review the steps and timeframes of the whiteboard design session.
+- Ready, set, go! Let the table participants begin.
 
 ### Step 2: Design a proof of concept solution
 
-* Check in with your tables to ensure that they are transitioning from step to step on time.
-* Provide some feedback on their responses to the business needs and design.
-  * Try asking questions first that will lead the participants to discover the answers on their own.
-* Provide feedback for their responses to the customer's objections.
-  * Try asking questions first that will lead the participants to discover the answers on their own.
+- Check in with your tables to ensure that they are transitioning from step to step on time.
+- Provide some feedback on their responses to the business needs and design.
+  - Try asking questions first that will lead the participants to discover the answers on their own.
+- Provide feedback for their responses to the customer's objections.
+  - Try asking questions first that will lead the participants to discover the answers on their own.
 
 ### Step 3: Present the solution
 
-* Determine which table will be paired with your table before Step 3 begins.
-* For the first round, assign one table as the Microsoft team and the other table as the customer.
-* Have the Microsoft team present their solution to the customer team.
-  * Have the customer team provide one objection for the Microsoft team to respond to.
-  * The presentation and objections should be no longer than 10 minutes.
-* Have participants on the customer team give feedback to the Microsoft team.
-  * The feedback should be no longer than 5 minutes.
-  * If needed, the trainer may also provide feedback.
+- Determine which table will be paired with your table before Step 3 begins.
+- For the first round, assign one table as the Microsoft team and the other table as the customer.
+- Have the Microsoft team present their solution to the customer team.
+  - Have the customer team provide one objection for the Microsoft team to respond to.
+  - The presentation and objections should be no longer than 10 minutes.
+- Have participants on the customer team give feedback to the Microsoft team.
+  - The feedback should be no longer than 5 minutes.
+  - If needed, the trainer may also provide feedback.
 
 ### Wrap-up
 
-* Have the table participants reconvene with the larger session group to hear a SME share the following preferred solution.
+- Have the table participants reconvene with the larger session group to hear a SME share the following preferred solution.
 
 ### Preferred target audience
 
-* Grant Trey, Chief Innovation Officer, Trey Research
-* Dan Cole, VP of Engineering, Trey Research
-* The primary audience is the business and technology decision makers. From the case study scenario, this would include the Director of Analytics. Usually we talk to the infrastructure managers who report to the chief information officers (CIOs), or to application sponsors (like a vice president [VP] line of business [LOB], or chief marketing officer [CMO]), or to those that represent the business unit IT or developers that report to application sponsors.
+- Grant Trey, Chief Innovation Officer, Trey Research
+- Dan Cole, VP of Engineering, Trey Research
+- The primary audience is the business and technology decision makers. From the case study scenario, this would include the Director of Analytics. Usually we talk to the infrastructure managers who report to the chief information officers (CIOs), or to application sponsors (like a vice president [VP] line of business [LOB], or chief marketing officer [CMO]), or to those that represent the business unit IT or developers that report to application sponsors.
 
 ### Preferred solution
 

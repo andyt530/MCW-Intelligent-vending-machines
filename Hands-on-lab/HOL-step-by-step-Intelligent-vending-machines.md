@@ -17,34 +17,34 @@ If you have not yet completed the steps to set up your environment in [Before th
 
 ## Contents
 
-* [Abstract](#abstract)
-* [Overview](#overview)
-* [Solution architecture](#solution-architecture)
-* [Requirements](#requirements)
-* [Exercise 1: Create Dynamic Pricing Model](#exercise-1-create-dynamic-pricing-model)
-  * [Task 1: Create a model locally](#task-1-create-a-model-locally)
-  * [Task 2: Try a prediction locally](#task-2-try-a-prediction-locally)
-  * [Task 3: Create the model in R Server on HDInsight](#task-3-create-the-model-in-r-server-on-hdinsight)
-  * [Task 4: Create predictive service in R Server Operationalization](#task-4-create-predictive-service-in-r-server-operationalization)
-* [Exercise 2: Implement dynamic pricing](#exercise-2-implement-dynamic-pricing)
-  * [Task 1: Implement photo uploads to Azure Storage](#task-1-implement-photo-uploads-to-azure-storage)
-  * [Task 2: Provision Cognitive Services Face API](#task-2-provision-cognitive-services-face-api)
-  * [Task 3: Invoke Face API](#task-3-invoke-face-api)
-  * [Task 4: Invoke pricing model](#task-4-invoke-pricing-model)
-  * [Task 5: Configure the Simulator](#task-5-configure-the-simulator)
-  * [Task 6: Test dynamic pricing in Simulator](#task-6-test-dynamic-pricing-in-simulator)
-* [Exercise 3: Implement purchasing](#exercise-3-implement-purchasing)
-  * [Task 1: Create the transactions table](#task-1-create-the-transactions-table)
-  * [Task 2: Configure the Simulator](#task-2-configure-the-simulator)
-  * [Task 3: Test purchasing](#task-3-test-purchasing)
-* [Exercise 4: Implement device command and control](#exercise-4-implement-device-command-and-control)
-  * [Task 1: Provision IoT Hub](#task-1-provision-iot-hub)
-  * [Task 2: Listen for control messages](#task-2-listen-for-control-messages)
-  * [Task 3: Send control messages](#task-3-send-control-messages)
-  * [Task 4: Configure the DeviceControlConsole and Simulator](#task-4-configure-the-devicecontrolconsole-and-simulator)
-* [Exercise 5: Analytics with Power BI Desktop](#exercise-5-analytics-with-power-bi-desktop)
-  * [Task 1: Build the query and create the visualization](#task-1-build-the-query-and-create-the-visualization)
-* [After the hands-on lab](#after-the-hands-on-lab)
+- [Abstract](#abstract)
+- [Overview](#overview)
+- [Solution architecture](#solution-architecture)
+- [Requirements](#requirements)
+- [Exercise 1: Create Dynamic Pricing Model](#exercise-1-create-dynamic-pricing-model)
+  - [Task 1: Create a model locally](#task-1-create-a-model-locally)
+  - [Task 2: Try a prediction locally](#task-2-try-a-prediction-locally)
+  - [Task 3: Create the model in R Server on HDInsight](#task-3-create-the-model-in-r-server-on-hdinsight)
+  - [Task 4: Create predictive service in R Server Operationalization](#task-4-create-predictive-service-in-r-server-operationalization)
+- [Exercise 2: Implement dynamic pricing](#exercise-2-implement-dynamic-pricing)
+  - [Task 1: Implement photo uploads to Azure Storage](#task-1-implement-photo-uploads-to-azure-storage)
+  - [Task 2: Provision Cognitive Services Face API](#task-2-provision-cognitive-services-face-api)
+  - [Task 3: Invoke Face API](#task-3-invoke-face-api)
+  - [Task 4: Invoke pricing model](#task-4-invoke-pricing-model)
+  - [Task 5: Configure the Simulator](#task-5-configure-the-simulator)
+  - [Task 6: Test dynamic pricing in Simulator](#task-6-test-dynamic-pricing-in-simulator)
+- [Exercise 3: Implement purchasing](#exercise-3-implement-purchasing)
+  - [Task 1: Create the transactions table](#task-1-create-the-transactions-table)
+  - [Task 2: Configure the Simulator](#task-2-configure-the-simulator)
+  - [Task 3: Test purchasing](#task-3-test-purchasing)
+- [Exercise 4: Implement device command and control](#exercise-4-implement-device-command-and-control)
+  - [Task 1: Provision IoT Hub](#task-1-provision-iot-hub)
+  - [Task 2: Listen for control messages](#task-2-listen-for-control-messages)
+  - [Task 3: Send control messages](#task-3-send-control-messages)
+  - [Task 4: Configure the DeviceControlConsole and Simulator](#task-4-configure-the-devicecontrolconsole-and-simulator)
+- [Exercise 5: Analytics with Power BI Desktop](#exercise-5-analytics-with-power-bi-desktop)
+  - [Task 1: Build the query and create the visualization](#task-1-build-the-query-and-create-the-visualization)
+- [After the hands-on lab](#after-the-hands-on-lab)
 
 ## Abstract
 
@@ -64,14 +64,14 @@ Below is a diagram of the solution architecture you will build in this lab. Plea
 
 ## Requirements
 
-* Microsoft Azure subscription must be pay-as-you-go or MSDN
-  * Trial subscriptions will not work
-* A virtual machine configured with:
-  * Visual Studio Community 2017 15.6 or later
-  * Azure SDK 2.9 or later (Included with Visual Studio 2017)
-  * [R Tools for Visual Studio](https://aka.ms/rtvs-current) 0.3.2 or later
-  * [Power BI Desktop](https://powerbi.microsoft.com/desktop) (June 2016 build or later)
-  * A running R Server on HD Insight Spark cluster (see [Before the hands-on lab](#before-the-hands-on-lab))
+- Microsoft Azure subscription must be pay-as-you-go or MSDN
+  - Trial subscriptions will not work
+- A virtual machine configured with:
+  - Visual Studio Community 2017 15.6 or later
+  - Azure SDK 2.9 or later (Included with Visual Studio 2017)
+  - [R Tools for Visual Studio](https://aka.ms/rtvs-current) 0.3.2 or later
+  - [Power BI Desktop](https://powerbi.microsoft.com/desktop) (June 2016 build or later)
+  - A running R Server on HD Insight Spark cluster (see [Before the hands-on lab](#before-the-hands-on-lab))
 
 ## Exercise 1: Create Dynamic Pricing Model
 
@@ -462,19 +462,19 @@ To provision access to the Face API (which provides demographic information abou
 
 2. On the Create Face API blade:
 
-    * **Name**: Enter a name, such as vendingfaceapi
+    - **Name**: Enter a name, such as vendingfaceapi
 
-    * **Subscription**: Select the subscription you are using for this hands-on lab
+    - **Subscription**: Select the subscription you are using for this hands-on lab
 
-    * **Location**: Select the location you are using for this hands-on lab
+    - **Location**: Select the location you are using for this hands-on lab
 
-    * **Pricing tier**: Select F0
+    - **Pricing tier**: Select F0
 
-    * **Resource group**: Choose Use existing and select the hands-on-lab-SUFFIX resource group
+    - **Resource group**: Choose Use existing and select the hands-on-lab-SUFFIX resource group
 
         ![The Face API Create blade is displayed, and the values specified above are entered into the appropriate fields.](./media/cognitive-services-face-api-create.png "Create Face API")
 
-    * Select **Create**
+    - Select **Create**
 
 3. When the Face API finishes provisioning, browse to the Cognitive Services Face API by clicking on Go to resource in the Deployment succeeded notification.
 
@@ -570,17 +570,17 @@ To provision access to the Face API (which provides demographic information abou
 
 2. Within the `appSettings` section, set the following settings (there were copied into a text edit previously):
 
-    * **faceAPIKey**: set this to the KEY 1 value for your Face API as acquired from the Azure Portal.
+    - **faceAPIKey**: set this to the KEY 1 value for your Face API as acquired from the Azure Portal.
 
-    * **faceEndpoint**: set this to the ENDPOINT value for your Face API as acquired from the Azure Portal (for example: <https://eastus2.api.cognitive.microsoft.com/face/v1.0>)
+    - **faceEndpoint**: set this to the ENDPOINT value for your Face API as acquired from the Azure Portal (for example: <https://eastus2.api.cognitive.microsoft.com/face/v1.0>)
 
-    * **storageConnectionString**: set this to the connection string of the Storage Account you created with the photos container.
+    - **storageConnectionString**: set this to the connection string of the Storage Account you created with the photos container.
 
-        * On your Storage account blade. Select **Access Keys** from the left-hand menu.
+        - On your Storage account blade. Select **Access Keys** from the left-hand menu.
 
             ![Screenshot of the Settings section on the Storage blade. Access keys is highlighted.](./media/azure-storage-account-access-keys.png "Storage blade, Settings section")
 
-        * Use the copy button to the right of the Connection String for key1 to copy your storage connection string. Save the copied value to a text editor, such as Notepad, as this will be used later on.
+        - Use the copy button to the right of the Connection String for key1 to copy your storage connection string. Save the copied value to a text editor, such as Notepad, as this will be used later on.
 
            ![The keys for the storage account are shown in the Azure portal. The key1 Connection string is highlighted.](./media/azure-storage-account-access-keys-key1-connectionstring.png "Storage account access keys")
 
@@ -696,11 +696,11 @@ In this exercise, you will create an in-memory, columnar index table in SQL DB t
 
 4. Within the `connectionString` section, set the following:
 
-    * **TransactionsModel**: set the value of the connectionString attribute to the ADO.NET connection string to your SQL DB instance. **Do not forget to replace the values for {your_username} and {your_password} with your actual credentials.**
+    - **TransactionsModel**: set the value of the connectionString attribute to the ADO.NET connection string to your SQL DB instance. **Do not forget to replace the values for {your_username} and {your_password} with your actual credentials.**
 
-        * **User name**: demouser
+        - **User name**: demouser
 
-        * **Password**: Password.1!!
+        - **Password**: Password.1!!
 
 5. Save the `App.config`.
 
@@ -738,21 +738,21 @@ In these steps, you will provision an instance of IoT Hub.
 
 2. On the IoT Hub blade Basics tab, enter the following:
 
-    * **Subscription**: Select the subscription you are using for this hands-on lab
+    - **Subscription**: Select the subscription you are using for this hands-on lab
 
-    * **Resource group**: Choose Use existing and select the hands-on-lab-SUFFIX resource group
+    - **Resource group**: Choose Use existing and select the hands-on-lab-SUFFIX resource group
 
-    * **Region**: Select the location you are using for this hands-on lab
+    - **Region**: Select the location you are using for this hands-on lab
 
-    * **IoT Hub Name**: Enter a unique name, such as vendingmachineshubSUFFIX
+    - **IoT Hub Name**: Enter a unique name, such as vendingmachineshubSUFFIX
 
         ![The Basics blade for IoT Hub is displaye, with the values specified above entered into the appropriate fields.](./media/iot-hub-basics-blade.png "Create IoT Hub Basic blade")
 
-    * Select **Next: Size and Scale**.
+    - Select **Next: Size and Scale**.
 
-    * On the Size and scale blade, accept the default Pricing and scale tier of S1: Standard tier, and select **Review + create**.
+    - On the Size and scale blade, accept the default Pricing and scale tier of S1: Standard tier, and select **Review + create**.
 
-    * Select **Create** on the Review + create blade.
+    - Select **Create** on the Review + create blade.
 
 3. When the IoT Hub deployment is completed, you will receive a notification in the Azure portal. Select **Go to resource** in the notification.
 

@@ -15,16 +15,16 @@ Updated May 2018
 
 ## Contents
 
-* [Abstract](#abstract)
-* [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
-  * [Customer situation](#customer-situation)
-  * [Customer needs](#customer-needs)
-  * [Customer objections](#customer-objections)
-  * [Infographic for common scenarios](#infographic-for-common-scenarios)
-* [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
-* [Step 3: Present the solution](#step-3-present-the-solution)
-* [Wrap-up](#wrap-up)
-* [Additional references](#additional-references)
+- [Abstract](#abstract)
+- [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
+  - [Customer situation](#customer-situation)
+  - [Customer needs](#customer-needs)
+  - [Customer objections](#customer-objections)
+  - [Infographic for common scenarios](#infographic-for-common-scenarios)
+- [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
+- [Step 3: Present the solution](#step-3-present-the-solution)
+- [Wrap-up](#wrap-up)
+- [Additional references](#additional-references)
 
 ## Abstract
 
@@ -54,9 +54,9 @@ When it comes to commerce, they are looking at modernizing the handling of purch
 
 While commerce is of prime importance, Trey Research believes that understanding the events that led to a successful or unsuccessful purchase transaction are just as important. They want to be able to collect Engagement Telemetry that includes dwell times, impressions and conversions. These are defined as follows:
 
-* **Dwell Times**: a user "session", for a given subject. Dwell times indicate how long the user either interacted with the device or stood by examining the inventory/promotions. These metrics have a start time and duration.
-* **Impressions**: the time and type of promotion displayed
-* **Conversions**: when a recommendation is displayed, and a purchase transaction occurred, was the recommended product purchased or not?
+- **Dwell Times**: a user "session", for a given subject. Dwell times indicate how long the user either interacted with the device or stood by examining the inventory/promotions. These metrics have a start time and duration.
+- **Impressions**: the time and type of promotion displayed
+- **Conversions**: when a recommendation is displayed, and a purchase transaction occurred, was the recommended product purchased or not?
 
 The goal being that the data that their vending machine provides can paint a picture of the purchase funnel---that is understanding what products were viewed in a session, which was ultimately purchased, and which was not?
 

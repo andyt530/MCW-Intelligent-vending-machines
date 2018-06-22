@@ -6,8 +6,8 @@ Trey Research Inc. looks at the old way of doing things in retail and introduces
 
 ## Target audience
 
-* Application developer
-* AI Developer
+- Application developer
+- AI Developer
 
 ## Abstract
 
@@ -31,17 +31,17 @@ At the end of this hands-on lab, you will be better able to build IoT solutions 
 
 ## Azure services and related products
 
-* Azure App Services
-* Azure Blob Storage
-* Azure SQL Database
-* Cognitive Services Face API
-* Data Lake Store
-* IoT Hub
-* Microsoft Machine Learning Server
-* Power BI Desktop
-* R Server cluster on HDInsight
-* R Tools for Visual Studio 2017
-* Visual Studio 2017
+- Azure App Services
+- Azure Blob Storage
+- Azure SQL Database
+- Cognitive Services Face API
+- Data Lake Store
+- IoT Hub
+- Microsoft Machine Learning Server
+- Power BI Desktop
+- R Server cluster on HDInsight
+- R Tools for Visual Studio 2017
+- Visual Studio 2017
 
 ## Azure solution
 

@@ -8,29 +8,29 @@ In the Before the hands-on lab exercise, you will set up your environment for us
 
 ## Contents
 
-* [Task 1: Execute ARM template to provision Azure resources](#task-1-execute-arm-template-to-provision-azure-resources)
-* [Task 2: Connect to your Lab VM](#task-2-connect-to-your-lab-vm)
-* [Task 3: Confirm installation of R Tools for Visual Studio 2017](#task-3-confirm-installation-of-r-tools-for-visual-studio-2017)
-* [Task 4: Download the vending machines starter project](#task-4-download-the-vending-machines-starter-project)
-* [Task 5: Set up Photos Storage account containers](task-5-set-up-photos-storage-account-containers)
-* [Task 6: Configure Microsoft Machine Learning Server on Linux](task-6-configure-microsoft-machine-learning-server-on-linux)
-* [Next steps](#next-steps)
+- [Task 1: Execute ARM template to provision Azure resources](#task-1-execute-arm-template-to-provision-azure-resources)
+- [Task 2: Connect to your Lab VM](#task-2-connect-to-your-lab-vm)
+- [Task 3: Confirm installation of R Tools for Visual Studio 2017](#task-3-confirm-installation-of-r-tools-for-visual-studio-2017)
+- [Task 4: Download the vending machines starter project](#task-4-download-the-vending-machines-starter-project)
+- [Task 5: Set up Photos Storage account containers](task-5-set-up-photos-storage-account-containers)
+- [Task 6: Configure Microsoft Machine Learning Server on Linux](task-6-configure-microsoft-machine-learning-server-on-linux)
+- [Next steps](#next-steps)
 
 ## Task 1: Execute ARM template to provision Azure resources
 
 In this task, you will run an Azure Resource Manager (ARM) template to provision many of the Azure resources you will be using throughout this lab. The ARM template provisions the following resources, and installs software on the Lab VM using a PowerShell script:
 
-* Azure Resource group
-* R Server on HDInsight cluster
-* Windows Server 2016 (x64) virtual machine with the following software installed:
-  * Visual Studio Community 2017
-  * Power BI Desktop
-  * Git Bash
-  * R Tools for Visual Studio 2017 (RTVS)
-  * Google Chrome web browser
-* Microsoft Machine Learning Server on Linux
-* Azure storage account for storing photos
-* Azure SQL Database
+- Azure Resource group
+- R Server on HDInsight cluster
+- Windows Server 2016 (x64) virtual machine with the following software installed:
+  - Visual Studio Community 2017
+  - Power BI Desktop
+  - Git Bash
+  - R Tools for Visual Studio 2017 (RTVS)
+  - Google Chrome web browser
+- Microsoft Machine Learning Server on Linux
+- Azure storage account for storing photos
+- Azure SQL Database
 
 > Note: If you want to review the steps for manually creating the resources provisioned by the ARM template, see [Appendix A](./appendix.md).
 
@@ -41,19 +41,19 @@ In this task, you will run an Azure Resource Manager (ARM) template to provision
     </a>
 
 2. On the Custom deployment blade, enter the following:
-    * **Subscription**: Select the subscription you are using for this hands on lab
-    * **Resource group**: Choose Create new and enter hands-on-lab-SUFFIX as the resource group name
-    * **Location**: Select the region you would like to use for resources in this hands-on lab. Remember this location so you can use it for the other resources you'll provision throughout this lab
-    * **Resource Name Suffix**: Enter a unique suffix, such as your initials or Microsoft alias, to use for uniquely naming resources created by the ARM template
-    * Leave the default values for the remaining resources, but note the values for later reference:
-        * **Cluster Login Username**: admin
-        * **SSH Username**: remoteuser
-        * **Virtual Machine Username**: demouser
-        * **ML Virtual Machine Username**: radmin
-        * **Database Username**: demouser
-        * **Database Name**: vending
-        * **Database Server Name**: vendingmachines
-        * All usernames use the password **Password.1!!**
+    - **Subscription**: Select the subscription you are using for this hands on lab
+    - **Resource group**: Choose Create new and enter hands-on-lab-SUFFIX as the resource group name
+    - **Location**: Select the region you would like to use for resources in this hands-on lab. Remember this location so you can use it for the other resources you'll provision throughout this lab
+    - **Resource Name Suffix**: Enter a unique suffix, such as your initials or Microsoft alias, to use for uniquely naming resources created by the ARM template
+    - Leave the default values for the remaining resources, but note the values for later reference:
+        - **Cluster Login Username**: admin
+        - **SSH Username**: remoteuser
+        - **Virtual Machine Username**: demouser
+        - **ML Virtual Machine Username**: radmin
+        - **Database Username**: demouser
+        - **Database Name**: vending
+        - **Database Server Name**: vendingmachines
+        - All usernames use the password **Password.1!!**
 
         ![The Custom Deployment blade is displayed in the Azure portal, with the values specified above entered into the appropriate fields.](./media/create-resource-template-deployment.png "Template deployment")
 
@@ -223,7 +223,7 @@ In this task, you will perform some configuration on the Machine Learning Server
 
 You are now ready to complete the hands-on lab. Select a guide below to get started, or you can return to the overview page for the lab.
 
-* Complete Hands-on lab
-  * [Step-by-step guide](./HOL-step-by-step-Intelligent-vending-machines.md)
-  * [Unguided guide](./HOL-unguided-Intelligent-vending-machines.md)
-* Return to [Hands-on lab readme](./readme.md)
+- Complete Hands-on lab
+  - [Step-by-step guide](./HOL-step-by-step-Intelligent-vending-machines.md)
+  - [Unguided guide](./HOL-unguided-Intelligent-vending-machines.md)
+- Return to [Hands-on lab readme](./readme.md)
