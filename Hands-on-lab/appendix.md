@@ -1,6 +1,6 @@
 # Appendix A: Create lab resources manually
 
-This appendix provides step-by-step instructions for manually creating the lab resources that are provisioned by the ARM template used in the [Before the hands-on lab](./Setup.md) section. If you follow these steps, you will still need to complete the steps in Before the Hands-on Lab after creating and configuring the resources below.
+This appendix provides step-by-step instructions for manually creating the lab resources that are provisioned by the ARM template used in the [Before the hands-on lab](./Before-the-lab.md) section. If you follow these steps, you will still need to complete the steps in Before the Hands-on Lab after creating and configuring the resources below.
 
 ## Contents
 
@@ -160,7 +160,7 @@ In this task, you will use the Azure Portal to provision an R Server on HDInsigh
 
 ## Task 4: Install Power BI Desktop on the Lab VM
 
-1. Connect to the **LabVM**, following the steps provided in [Before the Hands-on Lab, Task 2](./Setup.md).
+1. Connect to the **LabVM**, following the steps provided in [Before the Hands-on Lab, Task 2](./Before-the-lab.md).
 
 2. In a web browser on the Lab VM navigate to the [Power BI Desktop download page](https://www.microsoft.com/en-us/download/details.aspx?id=45331)
 

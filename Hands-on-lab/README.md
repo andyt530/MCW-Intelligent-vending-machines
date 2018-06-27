@@ -40,7 +40,7 @@ Below is a diagram of the solution architecture you will build in this lab. Plea
 
 Before attending the hands-on lab workshop, you should set up your environment for use in the rest of the hands-on lab.
 
-You should follow all the steps provided in the [Before the hands-on lab](./Setup.md) section to prepare your environment before attending the hands-on lab. Failure to complete the Before the hands-on lab setup may result in an inability to complete the lab with in the time allowed.
+You should follow all the steps provided in the [Before the hands-on lab](./Before-the-lab.md) section to prepare your environment before attending the hands-on lab. Failure to complete the Before the hands-on lab setup may result in an inability to complete the lab with in the time allowed.
 
 ## Hands-on lab
 
