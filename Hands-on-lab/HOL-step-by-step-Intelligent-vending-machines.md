@@ -48,7 +48,7 @@ If you have not yet completed the steps to set up your environment in [Before th
 
 ## Abstract
 
-In this hands-on lab, you will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
+In this hands-on lab, you will implement an IoT solution for intelligent vending machines, using facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
 At the end of this hands-on lab, you will be better able to build IoT solutions leveraging cloud-based machine learning services and real-time analytics.
 
