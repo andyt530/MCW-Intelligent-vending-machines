@@ -48,14 +48,9 @@ If you have not yet completed the steps to set up your environment in [Before th
 
 ## Abstract
 
-In this workshop, attendees will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning app, and real-time analytics with SQL Database in-memory and columnar indexing.
+In this hands-on lab, you will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
-In addition, attendees will learn to:
-
-- Enable real-time analytics with SQL Database in-memory and columnar indexing
-- Implement distributed machine learning with R Server for HDInsight & Microsoft R Server Operationalization
-- Perform facial image processing
-- Wrangle data in Power BI Desktop
+At the end of this hands-on lab, you will be better able to build IoT solutions leveraging cloud-based machine learning services and real-time analytics.
 
 ## Overview
 
