@@ -22,6 +22,35 @@ The names of manufacturers, products, or URLs are provided for informational pur
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners.
 
+## Contents
+
+- [Intelligent vending machines whiteboard design session trainer guide](#intelligent-vending-machines-whiteboard-design-session-trainer-guide)
+  - [Trainer information](#trainer-information)
+    - [Role of the trainer](#role-of-the-trainer)
+    - [Whiteboard design session flow](#whiteboard-design-session-flow)
+    - [Before the whiteboard design session: How to prepare](#before-the-whiteboard-design-session-how-to-prepare)
+    - [During the whiteboard design session: Tips for an effective whiteboard design session](#during-the-whiteboard-design-session-tips-for-an-effective-whiteboard-design-session)
+  - [Intelligent vending machines whiteboard design session student guide](#intelligent-vending-machines-whiteboard-design-session-student-guide)
+    - [Abstract and learning objectives](#abstract-and-learning-objectives)
+    - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
+      - [Customer situation](#customer-situation)
+      - [Customer needs](#customer-needs)
+      - [Customer objections](#customer-objections)
+      - [Infographic for common scenarios](#infographic-for-common-scenarios)
+    - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
+    - [Step 3: Present the solution](#step-3-present-the-solution)
+    - [Wrap-up](#wrap-up)
+    - [Additional references](#additional-references)
+- [Intelligent vending machines whiteboard design session trainer guide](#intelligent-vending-machines-whiteboard-design-session-trainer-guide)
+  - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study-1)
+  - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution-1)
+  - [Step 3: Present the solution](#step-3-present-the-solution-1)
+  - [Wrap-up](#wrap-up)
+  - [Preferred target audience](#preferred-target-audience)
+  - [Preferred solution](#preferred-solution)
+  - [Checklist of preferred objection handling](#checklist-of-preferred-objection-handling)
+  - [Customer quote (to be read back to the attendees at the end)](#customer-quote-to-be-read-back-to-the-attendees-at-the-end)
+
 # Intelligent vending machines whiteboard design session student guide
 
 ### Abstract
@@ -129,14 +158,8 @@ Trey Research realizes that their vending machines and the cloud are a perfect m
 1. What technology would you recommend that Trey uses for implementing their machine learning model that recommends a product and price, given consumer demographics?
 2. How would you guide Trey to load data, so it can be used for training the machine learning model?
 3. What category of machine learning algorithm would you recommend to Trey for use in constructing their model? For this scenario, your options are: clustering, regression or two-class classification. Why?
-<<<<<<< HEAD:Whiteboard design session/WDS student guide - Intelligent vending machines.md
 4. How would you operationalize your trained model, so it can be invoked with the demographics?
 5. Where would you store the packages containing promotional artifacts for download by the vending machine and how would you instruct the vending machine to download and install them? Be specific on any Azure services and protocols used.
-=======
-4. Are there any R packages you would suggest they utilize?
-5. How would you operationalize your trained model so that it can be invoked with the demographics?
-6. Where would you store the packages containing promotional artifacts for download by the vending machine and how would you instruct the vending machine to download and install them? Be specific on any Azure services and protocols used.
->>>>>>> 20a14eb93a4171d05bb380bef8c07fd16a2421ee:Whiteboard-design-session/WDS-student-guide-Intelligent-vending-machines.md
 
 ##### Visualization and reporting
 

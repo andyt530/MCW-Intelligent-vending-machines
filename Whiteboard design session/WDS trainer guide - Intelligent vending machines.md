@@ -244,14 +244,8 @@ Trey Research realizes that their vending machines and the cloud are a perfect m
 1. What technology would you recommend that Trey uses for implementing their machine learning model that recommends a product and price, given consumer demographics?
 2. How would you guide Trey to load data, so it can be used for training the machine learning model?
 3. What category of machine learning algorithm would you recommend to Trey for use in constructing their model? For this scenario, your options are: clustering, regression or two-class classification. Why?
-<<<<<<< HEAD:Whiteboard design session/WDS trainer guide - Intelligent vending machines.md
 4. How would you operationalize your trained model, so it can be invoked with the demographics?
 5. Where would you store the packages containing promotional artifacts for download by the vending machine and how would you instruct the vending machine to download and install them? Be specific on any Azure services and protocols used.
-=======
-4. Are there any R packages you would suggest they utilize?
-5. How would you operationalize your trained model so that it can be invoked with the demographics?
-6. Where would you store the packages containing promotional artifacts for download by the vending machine and how would you instruct the vending machine to download and install them? Be specific on any Azure services and protocols used.
->>>>>>> 20a14eb93a4171d05bb380bef8c07fd16a2421ee:Whiteboard-design-session/WDS-trainer-guide-Intelligent-vending-machines.md
 
 ##### Visualization and reporting
 
