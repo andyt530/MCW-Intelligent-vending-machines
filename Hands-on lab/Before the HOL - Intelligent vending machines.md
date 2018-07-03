@@ -58,7 +58,7 @@ In this task, you will run an Azure Resource Manager (ARM) template to provision
 
 > Note: If you want to review the steps for manually creating the resources provisioned by the ARM template, see [Appendix A](./appendix.md).
 
-1. Select the **Deploy to Azure** button below to launch the script in a Custom deployment blade in the Azure portal.
+1. Select the **Deploy to Azure** button below to launch the script in a Custom deployment blade in the Azure portal
 
     <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2FMCW-Intelligent-vending-machines%2Fmay-2018-update%2FHands-on%20lab%2Fdeployment-template%2Fazure-deploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
@@ -81,7 +81,7 @@ In this task, you will run an Azure Resource Manager (ARM) template to provision
 
         ![The Custom Deployment blade is displayed in the Azure portal, with the values specified above entered into the appropriate fields.](./media/create-resource-template-deployment.png "Template deployment")
 
-3. Select **Purchase**.
+3. Select **Purchase**
 
 > It typically takes 15 - 20 minutes for the ARM template deployment to finish.
 
@@ -89,15 +89,15 @@ In this task, you will run an Azure Resource Manager (ARM) template to provision
 
 In this task, you will create an RDP connection to your Lab virtual machine (VM), which is the Windows Server 2016 (x64) VM provisioned by the ARM template.
 
-1. When the ARM template deployment has completed, navigate to the [Azure portal](https://portal.azure.com), select Resource groups in the Azure navigation pane, enter your resource group name (hands-on-lab-SUFFIX) into the filter box, and select it from the list.
+1. When the ARM template deployment has completed, navigate to the [Azure portal](https://portal.azure.com), select Resource groups in the Azure navigation pane, enter your resource group name (hands-on-lab-SUFFIX) into the filter box, and select it from the list
 
     ![Resource groups is selected in the Azure navigation pane, "hands" is entered into the filter box, and the "hands-on-lab-SUFFIX" resource group is highlighted.](./media/resource-groups.png "Resource groups list")
 
-2. In the list of resources for your resource group, select the LabVM Virtual Machine.
+2. In the list of resources for your resource group, select the LabVM Virtual Machine
 
     ![The list of resources in the hands-on-lab-SUFFIX resource group are displayed, and LabVM is highlighted.](./media/resource-group-resources-labvm.png "LabVM in resource group list")
 
-3. On your Lab VM blade, select Connect from the top menu.
+3. On your Lab VM blade, select Connect from the top menu
 
     ![The LabVM blade is displayed, with the Connect button highlighted in the top menu.](./media/connect-labvm.png "Connect to LabVM")
 
@@ -105,7 +105,7 @@ In this task, you will create an RDP connection to your Lab virtual machine (VM)
 
     ![The Connect to virtual machine blade is displayed, and the Download RDP file button is highlighted.](./media/connect-to-virtual-machine.png "Connect to virtual machine")
 
-5. Select **Connect** on the Remote Desktop Connection dialog.
+5. Select **Connect** on the Remote Desktop Connection dialog
 
     ![In the Remote Desktop Connection Dialog Box, the Connect button is highlighted.](./media/remote-desktop-connection.png "Remote Desktop Connection dialog")
 
@@ -115,7 +115,7 @@ In this task, you will create an RDP connection to your Lab virtual machine (VM)
 
     b. **Password**: Password.1!!
 
-7. Select **Yes** to connect, if prompted that the identity of the remote computer cannot be verified.
+7. Select **Yes** to connect, if prompted that the identity of the remote computer cannot be verified
 
     ![In the Remote Desktop Connection dialog box, a warning states that the identity of the remote computer cannot be verified, and asks if you want to continue anyway. At the bottom, the Yes button is circled.](./media/remote-desktop-connection-identity-verification.png "Remote Desktop Connection dialog")
 
@@ -123,33 +123,33 @@ In this task, you will create an RDP connection to your Lab virtual machine (VM)
 
     ![The Server Manager tile is circled in the Start Menu.](./media/start-menu-server-manager.png "Server Manager tile in the Start menu")
 
-9. Select **Local Server**, then select **On** next to **IE Enhanced Security Configuration**.
+9. Select **Local Server**, then select **On** next to **IE Enhanced Security Configuration**
 
     ![Screenshot of the Server Manager. In the left pane, Local Server is selected. In the right, Properties (For LabVM) pane, the IE Enhanced Security Configuration, which is set to On, is highlighted.](./media/windows-server-manager-ie-enhanced-security-configuration.png "Server Manager")
 
-10. In the Internet Explorer Enhanced Security Configuration dialog, select **Off under Administrators**, then select **OK**.
+10. In the Internet Explorer Enhanced Security Configuration dialog, select **Off under Administrators**, then select **OK**
 
     ![Screenshot of the Internet Explorer Enhanced Security Configuration dialog box, with Administrators set to Off.](./media/internet-explorer-enhanced-security-configuration-dialog.png "Internet Explorer Enhanced Security Configuration dialog box")
 
-11. Close the Server Manager.
+11. Close the Server Manager
 
 ## Task 3: Confirm installation of R Tools for Visual Studio 2017
 
 In this task, you will confirm that R Tools for Visual Studio 2017 (RTVS) was successfully installed by the ARM template.
 
-1. On your Lab VM, launch the Visual Studio Installer by select Search on the Windows task bar, entering "visual studio installer" into the search box, and selecting Visual Studio Installer for the results.
+1. On your Lab VM, launch the Visual Studio Installer by select Search on the Windows task bar, entering "visual studio installer" into the search box, and selecting Visual Studio Installer for the results
 
     ![In the Windows Search bar, "visual studio installer" is entered, and Visual Studio Installer is highlighted in the search results.](./media/windows-search-visual-studio-installer.png "Search for Visual Studio Installer")
 
-2. Update the Visual Studio Installer, if prompted.
+2. Update the Visual Studio Installer, if prompted
 
-3. Once the Installer starts, select **More**, then select **Modify**.
+3. Once the Installer starts, select **More**, then select **Modify**
 
     ![The More dropdown is expanded, and the Modify option is highlighted.](./media/visual-studio-installer-modify.png "Modify Visual Studio")
 
     > Note: If the Visual Studio installation is up to date, Modify may appear where the Update button is in the above screenshot. If you wish to update Visual Studio first, select Update. This is not necessary for this hands-on lab, and the operation can take 30 minutes or more to complete.
 
-4. Verify that the **Data science and analytical applications** workload is selected, indicated by a checked box in the upper right corner of the workload. If it is not, select the workload and select **Modify**.
+4. Verify that the **Data science and analytical applications** workload is selected, indicated by a checked box in the upper right corner of the workload. If it is not, select the workload and select **Modify**
 
     ![Data science and analytical applications workload in selected in the Visual Studio 2017 Installer modify screen.](./media/visual-studio-workloads-data-science.png "Visual Studio 2017 Workloads")
 
@@ -159,15 +159,15 @@ In this task, you will confirm that R Tools for Visual Studio 2017 (RTVS) was su
 
 Trey Research has provided a starter solution for you. They have asked you to use this as the starting point for creating the Vending Machines solution in Azure.
 
-1. From your LabVM, download the starter project by downloading a .zip copy of the Intelligent vending machines GitHub repo.
+1. From your LabVM, download the starter project by downloading a .zip copy of the Intelligent vending machines GitHub repo
 
-2. In a web browser, navigate to the [Intelligent vending machines MCW repo](https://github.com/Microsoft/MCW-Intelligent-vending-machines).
+2. In a web browser, navigate to the [Intelligent vending machines MCW repo](https://github.com/Microsoft/MCW-Intelligent-vending-machines)
 
-3. On the repo page, select **Clone or download**, then select **Download ZIP**.
+3. On the repo page, select **Clone or download**, then select **Download ZIP**
 
     ![Download .zip containing the Intelligent vending machines repository](media/git-hub-download-repo.png "Download ZIP")
 
-4. Unzip the contents to the folder **C:\\VendingMachines\\.**
+4. Unzip the contents to the folder **C:\\VendingMachines\\**
 
 ## Task 5: Set up Photos Storage account containers
 
@@ -175,45 +175,45 @@ In these steps, you will add containers for photos and promos to the photostorag
 
 1. In the [Azure portal](https://portal.azure.com), navigate to the photostorageSUFFIX storage account by selecting Resource groups from the Azure navigation pane, entering "hands-on-lab" in the filter box, selecting the hands-on-lab-SUFFIX resource group, and locating the photostorageSUFFIX storage account in the list of resources.
 
-2. From the storage account Overview blade, select the Blobs tile under Services.
+2. From the storage account Overview blade, select the Blobs tile under Services
 
     ![Screenshot of the Storage account blade, services section. Under Services, Blobs is selected.](./media/azure-storage-account-blobs-tile.png "Storage account blade, services section")
 
-3. In the Blob service blade, select **+Container** from the command bar.
+3. In the Blob service blade, select **+Container** from the command bar
 
     ![Screenshot of the Blob service blade command bar, with Container highlighted.](./media/azure-storage-account-blobs-container-add.png "Blob service blade command bar")
 
-4. On the New container blade, set the name to "**photos**" and select **Private** as the Access type.
+4. On the New container blade, set the name to "**photos**" and select **Private** as the Access type
 
     ![Screenshot of the New container blade Name and Public access level fields.](./media/azure-storage-account-blobs-container-new.png "New container blade")
 
-5. Select **OK**.
+5. Select **OK**
 
-6. Repeat steps 6-8 to create another container named "**promo**".
+6. Repeat steps 6-8 to create another container named "**promo**"
 
-7. You should now see both containers listed on the Blob service blade.
+7. You should now see both containers listed on the Blob service blade
 
     ![Screenshot of the Blob service blade name rows, with photos and promo listed.](./media/azure-storage-account-blobs-container-list.png "Blob service blade")
 
-8. Next, open Visual Studio and from the **View Menu** select **Cloud Explorer**.
+8. Next, open Visual Studio and from the **View Menu** select **Cloud Explorer**
 
     ![Screenshot of the Visual Studio View menu, with Cloud Explorer selected.](./media/visual-studio-view-menu-cloud-explorer.png "Visual Studio View menu")
 
     > Note: You may need to select and enter the credentials for your Azure subscription, by clicking the person icon and expanding the subscriptions.
 
-9. Expand **Storage accounts** and locate the photostorageSUFFIX account, and the **Blob Containers** you created underneath it.
+9. Expand **Storage accounts** and locate the photostorageSUFFIX account, and the **Blob Containers** you created underneath it
 
     ![Screenshot of the Visual Studio Cloud Explorer tree view, which is expanded to: Storage Accounts\\photostorageSUFFIX\\Blob Containers.](./media/visual-studio-cloud-explorer-storage-accounts.png "Storage accounts in Cloud Explorer")
 
-10. Right-click the promo container and select Open.
+10. Right-click the promo container and select Open
 
-11. Select the Upload blob button.
+11. Select the Upload blob button
 
     ![Screenshot of the Upload blob button.](./media/visual-studio-cloud-explorer-storage-account-container-upload-blob.png "Upload blob button")
 
 12. Select **Browse**, and in the File dialog, select the three images `CoconutWater.png`, `Water.png`, and `Soda.png` from the starter solution's `Simulator\Images` folder, then select **Open**.
 
-13. Select **OK** on the Upload New File Dialog to upload the images into the container.
+13. Select **OK** on the Upload New File Dialog to upload the images into the container
 
     ![Screenshot of the Updated New File window.](./media/visual-studio-cloud-explorer-upload-new-file.png "Updated New File window")
 
@@ -221,15 +221,15 @@ In these steps, you will add containers for photos and promos to the photostorag
 
 In this task, you will perform some configuration on the Machine Learning Server that was provisioned by the ARM template.
 
-1. In the [Azure portal](https://portal.azure.com), navigate to the Overview blade of the LabMLServer VM, select **Connect**, and copy the SSH command.
+1. In the [Azure portal](https://portal.azure.com), navigate to the Overview blade of the LabMLServer VM, select **Connect**, and copy the SSH command
 
     ![Connect to virtual machine blade, with the SSH command highlighted.](./media/machine-learning-server-connect.png "Connect to virtual machine via SSH")
 
 2. On your Lab VM, open a new Git Bash window, and paste the SSH connection command you copied in the previous step. For example: `ssh radmin@40.70.129.190`
 
-3. Execute the command to SSH into your Microsoft Machine Learning Server VM.
+3. Execute the command to SSH into your Microsoft Machine Learning Server VM
 
-4. When prompted if you want to continue connecting, enter **yes**.
+4. When prompted if you want to continue connecting, enter **yes**
 
 5. Enter your password, **Password.1!!**
 
@@ -239,7 +239,7 @@ In this task, you will perform some configuration on the Machine Learning Server
     sudo apt-get update -y
     ```
 
-7. Type **exit** twice to disconnect from the SSH session.
+7. Type **exit** twice to disconnect from the SSH session
 
 *These steps should be completed prior to starting the rest of the Lab.*
 

@@ -59,7 +59,7 @@ If you have not yet completed the steps to set up your environment in [Before th
 
 ## Abstract and learning objectives
 
-In this hands-on lab, you will implement an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
+In this hands-on lab, you will implement an IoT solution for intelligent vending machines, using facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
 At the end of this hands-on lab, you will be better able to build IoT solutions leveraging cloud-based machine learning services and real-time analytics.
 
@@ -92,41 +92,41 @@ In this exercise, you will create a machine learning model that predicts the pur
 
 ### Task 1: Create a model locally
 
-1. On your Lab VM, locate the starter project solution file, `VendingMachines.sln`, in the C:\\VendingMachines\\Hands-on lab\starter-project folder and double-click it to open it with Visual Studio 2017.
+1. On your Lab VM, locate the starter project solution file, `VendingMachines.sln`, in the C:\\VendingMachines\\Hands-on lab\starter-project folder and double-click it to open it with Visual Studio 2017
 
-2. If prompted, select Visual Studio 2017 from the Microsoft Visual Studio Version Selector.
+2. If prompted, select Visual Studio 2017 from the Microsoft Visual Studio Version Selector
 
     ![Visual Studio 2017 in selected in the Microsoft Visual Studio Version Selector.](./media/visual-studio-version-selector.png "Microsoft Visual Studio Version Selector")
 
-3. Sign in to Visual Studio or create an account, if prompted.
+3. Sign in to Visual Studio or create an account, if prompted
 
-4. If the Security Warning for Simulator window appears, uncheck **Ask me for every project in this solution**, and select **OK**.
+4. If the Security Warning for Simulator window appears, uncheck **Ask me for every project in this solution**, and select **OK**
 
     ![Screenshot of the Security warning for Simulator window. The checkbox is cleared for "Ask me for every project in this solution."](./media/visual-studio-security-warning.png "Security warning for Simulator")
 
     > Note: If you attempt to build the solution at this point, you will see many build errors. This is intentional. You will correct these in the exercises that follow.
 
-5. Within Visual Studio Solution Explorer, expand the **PricingModel** project and open the file `TrainModel.R` by double-clicking on the file in the Solution Explorer.
+5. Within Visual Studio Solution Explorer, expand the **PricingModel** project and open the file `TrainModel.R` by double-clicking on the file in the Solution Explorer
 
     ![Screenshot of the Visual Studio Solution Explorer, expanded to: Solution VendingMachines\\PricingModel\\TrainModel.R.](./media/visual-studio-solution-explorer-trainmodel.png "Visual Studio Solution Explorer")
 
-6. Read the script. The top portion, entitled Create Sample Data, has been provided for you and you will generate the sample data you will use to train your model.
+6. Read the script. The top portion, entitled Create Sample Data, has been provided for you. You will generate the sample data you will use to train your model.
 
-7. Highlight all the text between the "Create Sample Data" and "END Create Sample Data" comments.
+7. Highlight all the text between the "Create Sample Data" and "END Create Sample Data" comments
 
-8. Right-click the selected text and select **Execute In Interactive**.
+8. Right-click the selected text and select **Execute In Interactive**
 
     ![Screenshot of the Train Model tab, with Execute In Interactive highlighted on the sub-menu.](./media/visual-studio-execute-in-interactive.png "Train Model tab")
 
-9. You should see it execute in the R Interactive Window, ending with a summary of the created data.
+9. You should see it execute in the R Interactive Window, ending with a summary of the created data
 
     ![Screenshot of the R Interactive - Microsoft R Client window. ](./media/visual-studio-r-interactive-sample-data.png "R Interactive - Microsoft R Client window")
 
-10. From the R Tools menu, select Windows, then select Variable Explorer.
+10. From the R Tools menu, select Windows, then select Variable Explorer
 
     ![Screenshot of the R tools menu, with Windows / Variable Explorer selected.](./media/visual-studio-r-tools-menu-variable-explorer.png "R tools menu")
 
-11. Expand the variable **sampleData**, and explore the structure of the created data.
+11. Expand the variable **sampleData**, and explore the structure of the created data
 
     ![Screenshot of the Variable Explorer, with sampleData selected.](./media/visual-studio-r-tools-variable-explorer.png "Variable Explorer")
 
@@ -137,7 +137,7 @@ In this exercise, you will create a machine learning model that predicts the pur
     save(sampleData, file = "sampleData.RData")
     ```
 
-13. Highlight the **save line**, and select **Execute In Interactive**.
+13. Highlight the **save line**, and select **Execute In Interactive**
 
 14. Open File Explorer and navigate to the location of the **PricingModel** (C:\\VendingMachines\\Hands-on-lab\\starter-project\\PricingModel) project on disk. You should see the file `sampleData.RData` on disk.
 
@@ -166,17 +166,17 @@ In this exercise, you will create a machine learning model that predicts the pur
     save(inputExample, file = "inputExample.RData")
     ```
 
-18. Save your changes to `TrainModel.R`.
+18. Save your changes to `TrainModel.R`
 
-19. Highlight TODO items 2 through 4 and execute them in interactive.
+19. Highlight TODO items 2 through 4 and execute them in interactive
 
-20. In the same folder as your script, you should now have the files `sampleData.RData`, `pricingModel.RData`, and `inputExample.RData`.
+20. In the same folder as your script, you should now have the files `sampleData.RData`, `pricingModel.RData`, and `inputExample.RData`
 
     ![Screenshot of File Explorer, with the previously mentioned files highlighted.](./media/visual-studio-r-output-data-files.png "File Explorer")
 
 ### Task 2: Try a prediction locally
 
-1. Within Visual Studio, open `PredictUsingModel.r` under the Pricing Model project in Solution Explorer.
+1. Within Visual Studio, open `PredictUsingModel.r` under the Pricing Model project in Solution Explorer
 
 2. Replace `TODO 1` with the following:
 
@@ -194,15 +194,15 @@ In this exercise, you will create a machine learning model that predicts the pur
     prediction <- rxPredict(pricingModel, data = inputExample)
     ```
 
-4. Highlight all the script in the file and execute it in interactive.
+4. Highlight all the script in the file and execute it in interactive
 
-5. Using Variable Explorer, expand the prediction variable and observe the price the model suggested to use for purchasing the coconut water for input of a 30-year-old female.
+5. Using Variable Explorer, expand the prediction variable and observe the price the model suggested to use for purchasing the coconut water for input of a 30-year-old female
 
     ![Screenshot of Variable Explorer, prediction table. The purchasePrice_Prec is 0.949.](./media/visual-studio-r-prediction.png "Variable Explorer")
 
 ### Task 3: Create the model in R Server on HDInsight
 
-1. On your Lab VM, open a Git Bash shell from the start menu.
+1. On your Lab VM, open a Git Bash shell from the start menu
 
 2. At the command prompt, you will enter the following command to create the SSH connection:
 
@@ -216,13 +216,13 @@ In this exercise, you will create a machine learning model that predicts the pur
 
     ![Screenshot of Connect to cluster. Ssh.azurehdinsight.net is highlighted in the Hostname field, with the endpoint highlighted below.](./media/hdinsight-connect-to-cluster-with-ssh.png "Connect to cluster section")
 
-3. If prompted to continue connecting, enter yes.
+3. If prompted to continue connecting, enter yes
 
-4. Enter the password for **remoteuser** (Password: Password.1!!).
+4. Enter the password for **remoteuser** (Password: Password.1!!)
 
     ![Screenshot of the Git Bash window, with three command lines highlighted. The first is the remoteuser@clustername information. The second line is a prompt asking whether you want to continue connecting. The third is the remoteuser cluster name request for password.](./media/git-bash-ssh-to-hdinsight-cluster.png "Git Bash window")
 
-5. At the command prompt, type **R** to load the R shell (be sure to use a capital letter "R").
+5. At the command prompt, type **R** to load the R shell (be sure to use a capital letter "R")
 
 6. Run the following command to create a spark context for R:
 
@@ -231,9 +231,9 @@ In this exercise, you will create a machine learning model that predicts the pur
     rxSetComputeContext(sparkCluster)
     ```
 
-7. In Visual Studio, open `TrainModel.r`, and copy the entire script.
+7. In Visual Studio, open `TrainModel.r`, and copy the entire script
 
-8. Paste the script in the R shell, and press ENTER. (You may need to press ENTER a few times until you get to the last line of the script.)
+8. Paste the script in the R shell, and press ENTER (you may need to press ENTER a few times until you get to the last line of the script)
 
 9. When the script has finished executing, type the following:
 
@@ -252,7 +252,7 @@ In this exercise, you will create a machine learning model that predicts the pur
     rxHadoopMakeDir(modelExportDir)
     ```
 
-12. List the contents of the root ("/") directory, and confirm your "**/models**" folder has been created. Notice that the list you are looking at is folders directly underneath the container in Azure Storage that was created with your cluster.
+12. List the contents of the root ("/") directory and confirm your "**/models**" folder has been created. Notice that the list you are looking at is folders directly underneath the container in Azure Storage that was created with your cluster.
 
     ```r
     rxHadoopListFiles("/")
@@ -266,9 +266,9 @@ In this exercise, you will create a machine learning model that predicts the pur
     rxHadoopCopyFromLocal("pricingModel.RData", modelExportDir)
     ```
 
-14. Repeat the previous step for `inputExample.RData` and `sampleData.RData`.
+14. Repeat the previous step for `inputExample.RData` and `sampleData.RData`
 
-15. Run the following command to verify the three files now exist in HDFS (and Blob storage), under /models.
+15. Run the following command to verify the three files now exist in HDFS (and Blob storage), under /models
 
     ```r
     rxHadoopListFiles("/models")
@@ -282,36 +282,36 @@ In this exercise, you will create a machine learning model that predicts the pur
 
     ![Screenshot of Visual Studio, Cloud Explorer expanded as: labstorageSUFFIX\\Blob Containers\\vendingmachinescluster.](./media/visual-studio-cloud-explorer-lab-storage-container.png "Cloud Explorer storage container")
 
-18. Right-click the storage container, and select **Open.**
+18. Right-click the storage container, and select **Open**
 
-19. In the editor that appears, double-click the models folder, and verify you see your files.
+19. In the editor that appears, double-click the models folder, and verify you see your files
 
     ![Cloud Explorer file explorer displaying files listed under models/; three files display: inputExampleRData, pricingModelRData, and sampleDataRData.](./media/visual-studio-cloud-explorer-models-folder.png "Cloud Explorer Files")
 
-20. Right-click `inputExample.RData` and select Save As... and choose the directory for your `PricingModel` project, overwriting files if prompted.
+20. Right-click `inputExample.RData` and select Save As... and choose the directory for your `PricingModel` project, overwriting files if prompted
 
-21. Repeat the previous step for `pricingModel.RData` and `sampleData.RData`.
+21. Repeat the previous step for `pricingModel.RData` and `sampleData.RData`
 
-22. You have now used R Server on HDInsight to train a model that you can then upload to R Server Operationalization to expose it as a web service.
+22. You have now used R Server on HDInsight to train a model that you can then upload to R Server Operationalization to expose it as a web service
 
 ### Task 4: Create predictive service in R Server Operationalization
 
 After training a model, you want to operationalize the model so that it becomes available for integration by developers. One way to operationalize a trained model is to take the model you trained in HDInsight, and then to expose that as a predictive web service. In this task, you take a version of the scripts you have been running locally and in HDInsight and migrate them to run in the VM that is running R.
 
-1. In the [Azure portal](https://portal.azure.com), navigate to the Microsoft Machine Learning Server Virtual Machine, named LabMLServer, you provisioned with the ARM template.
+1. In the [Azure portal](https://portal.azure.com), navigate to the Microsoft Machine Learning Server Virtual Machine, named LabMLServer, you provisioned with the ARM template
 
-2. On top of the Overview blade, select Connect, then copy the SSH command.
+2. On top of the Overview blade, select Connect, then copy the SSH command
 
     ![The Connect dialog for the Microsoft Machine Learning Server is displayed, and the SSH command has been copied.](./media/machine-learning-server-ssh-command-copied.png "SSH Command copied")
 
 3. Using a new Git Bash window on your Lab VM, SSH into your Microsoft Machine Learning Server VM by pasting the SSH command you copied above at the command prompt. For example:
     **ssh radmin@[your-server-ip]**
 
-4. When prompted if you want to continue connecting, enter yes.
+4. When prompted if you want to continue connecting, enter yes
 
 5. Enter your password, **Password.1!!**
 
-6. At the prompt, after successfully logging in, you will need to complete a few tasks to configure and operationalize the environment.
+6. At the prompt, after successfully logging in, you will need to complete a few tasks to configure and operationalize the environment
 
 7. Run the following command to act as root:
 
@@ -338,13 +338,13 @@ After training a model, you want to operationalize the model so that it becomes 
 
 10. Locate the `appSetting` `rServiceBaseAddress` and enter **<http://[your-server-public-ip]:12800>** for the value. (For example: <http://52.168.132.221:12800>). Your server IP address is the same IP address you used for the SSH connection in Step 3 of this task, above.
 
-11. Locate **rServicePassword** in the appSettings section and update its value with the password you defined when you configured your R server for Operationalization (step 11 above), **Password.1!!**
+11. Locate **rServicePassword** in the appSettings section, and update its value with the password you defined when you configured your R server for Operationalization (step 11 above): **Password.1!!**
 
     ![The App.config file for the project is open with the AppSettings for three keys shown. These include the URL to the server, user name and password.](./media/visual-studio-app-config-appsettings.png "App.config appSettings section")
 
-12. Save `App.config`.
+12. Save `App.config`
 
-13. Open `PredictPricingService.r` within the **PricingModel** project in the Visual Studio Solution Explorer.
+13. Open `PredictPricingService.r` within the **PricingModel** project in the Visual Studio Solution Explorer
 
     ![The Visual Studio Solution Explorer has PricingModel expanded, and under it, PredictPricingService.r highlighted.](./media/visual-studio-solution-explorer-pricing-model-predict-pricing-service.png "Visual Studio Solution Explorer")
 
@@ -402,7 +402,7 @@ After training a model, you want to operationalize the model so that it becomes 
     cat(swagger, file = "swagger.json", append = FALSE)
     ```
 
-19. Highlight just the `TODO 3` and `TODO 4` code blocks you added and execute in interactive.
+19. Highlight just the `TODO 3` and `TODO 4` code blocks you added and execute in interactive
 
 20. When you scroll up through the R Interactive window results, you should see an output with your prediction like the following:
 
@@ -424,15 +424,15 @@ After training a model, you want to operationalize the model so that it becomes 
 
 Duration: 45 minutes
 
-In this exercise, you will implement the code that performs dynamic pricing, capitalizing on the Face API to acquire demographics, and your deployed pricing model to suggest the price based on those demographics. You will then run the vending machine simulator and see the dynamic pricing in action.
+In this exercise you will implement the code that performs dynamic pricing, capitalizing on the Face API to acquire demographics and your deployed pricing model to suggest the price based on those demographics. You will then run the vending machine simulator and see the dynamic pricing in action.
 
 ### Task 1: Implement photo uploads to Azure Storage
 
-1. In Visual Studio Solution Explorer, expand the Simulator project and then `MainWindow.xaml` and then open `MainWindow.xaml.cs`.
+1. In Visual Studio Solution Explorer, expand the Simulator project and then `MainWindow.xaml` and then open `MainWindow.xaml.cs`
 
     ![Visual Studio Solution Explorer is expanded as: Simulator\\MainWindow.xaml\\MainWindow.xaml.cs.](./media/visual-studio-solution-explorer-simulator-mainwindowxaml-cs.png "Visual Studio Solution Explorer")
 
-2. Scroll down to the method `UpdateDynamicPricing`.
+2. Scroll down to the method `UpdateDynamicPricing`
 
     ![The UpdateDynamicPrice function is high-lighted in Visual Studio.](./media/visual-studio-solution-explorer-simulator-mainwindowxaml-updatedynamicprice.png "UpdateDynamicPrice function")
 
@@ -461,13 +461,13 @@ In this exercise, you will implement the code that performs dynamic pricing, cap
     }
     ```
 
-6. Save `MainWindow.xaml.cs`.
+6. Save `MainWindow.xaml.cs`
 
 ### Task 2: Provision Cognitive Services Face API
 
 To provision access to the Face API (which provides demographic information about photos of human subjects), you will need to provision a Cognitive Services account.
 
-1. In the [Azure portal](https://portal.azure.com), select **+Create a resource**, enter "face" into the Search the Marketplace box, select **Face** from the results, and select **Create**.
+1. In the [Azure portal](https://portal.azure.com), select **+Create a resource**, enter "face" into the Search the Marketplace box, select **Face** from the results, and select **Create**
 
     ![+Create a resource is highlighted in the navigation pane of the Azure portal, "face" is entered into the Search the Marketplace box, and Face is highlighted in the results.](./media/create-resource-cognitive-services-face-api.png "Create Face API")
 
@@ -487,15 +487,15 @@ To provision access to the Face API (which provides demographic information abou
 
     - Select **Create**
 
-3. When the Face API finishes provisioning, browse to the Cognitive Services Face API by clicking on Go to resource in the Deployment succeeded notification.
+3. When the Face API finishes provisioning, browse to the Cognitive Services Face API by selecting Go to resource in the Deployment succeeded notification.
 
     ![Screenshot of the Deployment succeeded message, with the Go to resource button highlighted.](./media/cognitive-services-face-api-deployment-succeeded.png "Deployment succeeded message")
 
-4. On top of the Cognitive Services overview blade, click the Copy button to the right of the Endpoint. Paste this value into a text editor, such as Notepad, for later use.
+4. On top of the Cognitive Services overview blade, select the Copy button to the right of the Endpoint. Paste this value into a text editor, such as Notepad, for later use.
 
     ![Screenshot of the Cognitive Services overview blade, Essentials section. The Endpoint url is highlighted, and a callout points to the "Click to Copy" button.](./media/azure-portal-cognitive-services-overview-endpoint.png "Cognitive Services overview blade, Essentials section")
 
-5. In the Cognitive Services blade, select on Keys under the Resource Management heading.
+5. In the Cognitive Services blade, select on Keys under the Resource Management heading
 
     ![Screenshot of the Keys button.](./media/azure-portal-cognitive-services-keys.png "Keys button")
 
@@ -527,7 +527,7 @@ To provision access to the Face API (which provides demographic information abou
     return blob.Uri + sasBlobToken;
     ```
 
-4. With the SAS URI to the upload photo in hand, scroll to `GetPhotoDemographics` to implement the call to the Face API.
+4. With the SAS URI to the upload photo in hand, scroll to `GetPhotoDemographics` to implement the call to the Face API
 
     ![GetPhotoDemographics is high-lighted in Visual Studio.](./media/visual-studio-mainwindowxaml-getphotodemographics.png "GetPhotoDemographics method")
 
@@ -560,7 +560,7 @@ To provision access to the Face API (which provides demographic information abou
     string computedGender = faces[0].FaceAttributes.Gender;
     ```
 
-9. Save the file.
+9. Save the file
 
 ### Task 4: Invoke pricing model
 
@@ -573,21 +573,21 @@ To provision access to the Face API (which provides demographic information abou
     suggestedPrice = await pricingModel.GetSuggestedPrice((int)d.age, gender, _itemName);
     ```
 
-2. Save the file.
+2. Save the file
 
 ### Task 5: Configure the Simulator
 
-1. In the Simulator project, open `App.config`.
+1. In the Simulator project, open `App.config`
 
 2. Within the `appSettings` section, set the following settings (there were copied into a text edit previously):
 
-    - **faceAPIKey**: set this to the KEY 1 value for your Face API as acquired from the Azure Portal.
+    - **faceAPIKey**: set this to the KEY 1 value for your Face API as acquired from the Azure Portal
 
     - **faceEndpoint**: set this to the ENDPOINT value for your Face API as acquired from the Azure Portal (for example: <https://eastus2.api.cognitive.microsoft.com/face/v1.0>)
 
     - **storageConnectionString**: set this to the connection string of the Storage Account you created with the photos container.
 
-        - On your Storage account blade. Select **Access Keys** from the left-hand menu.
+        - On your Storage account blade. Select **Access Keys** from the left-hand menu
 
             ![Screenshot of the Settings section on the Storage blade. Access keys is highlighted.](./media/azure-storage-account-access-keys.png "Storage blade, Settings section")
 
@@ -607,35 +607,35 @@ To provision access to the Face API (which provides demographic information abou
     Update-Package -Reinstall
     ```
 
-2. That will force the packages to get downloaded again.
+2. That will force the packages to get downloaded again
 
-3. Now, in Solution Explorer, right-click the Simulator project, and select **Build**.
+3. Now, in Solution Explorer, right-click the Simulator project, and select **Build**
 
-4. Ensure that your build generates no errors (View the Output and Errors windows, under the View menu in Visual Studio).
+4. Ensure that your build generates no errors (View the Output and Errors windows, under the View menu in Visual Studio)
 
-5. Again, in solution explorer, right-click the Simulator project, and select Set as Startup Project.
+5. Again, in solution explorer, right-click the Simulator project, and select Set as Startup Project
 
     ![Screenshot of Solution Explorer, with Simulator selected, and in the sub-menu, Set as StartUp Project selected.](./media/visual-studio-simulator-project-set-as-startup.png "Solution Explorer")
 
-6. From the Debug menu, select Start Without Debugging.
+6. From the Debug menu, select Start Without Debugging
 
     ![Screenshot of the Debug menu, with Start Without Debugging selected.](./media/visual-studio-debug-menu-start-without-debugging.png "Debug menu")
 
-7. When the vending machine simulator appears, **select take picture** at the bottom.
+7. When the vending machine simulator appears, **select take picture** at the bottom
 
     ![The Vending Machine Simulator displays the ad for coconut water for $1.25.](./media/simulator-app-coconut-water.png "Vending Machine Simulator")
 
-8. In the dialog that appears, navigate to the images folder under **C:\\VendingMachines\\Hands-on-lab\\starter-project\\Simulator\\images\\photos**, and pick the photo of either the man or woman to upload, and select Open.
+8. In the dialog that appears, navigate to the images folder under **C:\\VendingMachines\\Hands-on-lab\\starter-project\\Simulator\\images\\photos**, pick the photo of either the man or woman to upload, and select Open
 
     ![Screenshot of Open window, expanded to the photos folder where two images display: female.jpeg, and male.jpeg.](./media/file-explorer-photos.png "Photos folder")
 
-9. In a few moments, you should see the price change from $1.25 to whatever value the predictive model suggested.
+9. In a few moments, you should see the price change from $1.25 to whatever value the predictive model suggested
 
     ![The Vending Machine Simulator now displays the coconut water price as $0.91.](./media/vending-macine-simulator-price-change.png "Vending Machine Simulator")
 
-10. Try using the other photo or your own photo to see what prices are suggested.
+10. Try using the other photo or your own photo to see what prices are suggested
 
-11. Click the X at the top right of the application to stop it.
+11. Click the X at the top right of the application to stop it
 
 ## Exercise 3: Implement purchasing
 
@@ -645,7 +645,7 @@ In this exercise, you will create an in-memory, columnar index table in SQL DB t
 
 ### Task 1: Create the transactions table
 
-1. Within Visual Studio Solution Explorer, expand the SQL Scripts folder and open the file `Create Table.sql`.
+1. Within Visual Studio Solution Explorer, expand the SQL Scripts folder and open the file `Create Table.sql`
 
     ![Screenshot of the Visual Studio Solution Explorer expanded to Create Table.sql.](./media/visual-studio-solution-explorer-sql-scripts-create-table.png "Visual Studio Solution Explorer")
 
@@ -677,15 +677,15 @@ In this exercise, you will create an in-memory, columnar index table in SQL DB t
     ALTER DATABASE CURRENT SET MEMORY_OPTIMIZED_ELEVATE_TO_SNAPSHOT=ON;
     ```
 
-6. Save the script.
+6. Save the script
 
-7. Execute the script by pressing the play icon.
+7. Execute the script by pressing the play icon
 
     ![Visual Studio execute SQL script button](./media/visual-studio-execute-sql.png "Visual Studio execute SQL script button")
 
-8. Expand **Azure**, and if prompted, sign in with your Azure credentials.
+8. Expand **Azure**, and if prompted, sign in with your Azure credentials
 
-9. From the Azure node, and select the database you created for the vending database.
+9. From the Azure node, select the database you created for the vending database
 
     ![Screenshot of the Connect window. Azure is expanded, and vending (vendingmachineslab) is highlighted.](./media/visual-studio-database-connect.png "Visual Studio database connect window")
 
@@ -695,15 +695,15 @@ In this exercise, you will create an in-memory, columnar index table in SQL DB t
 
 ### Task 2: Configure the Simulator
 
-1. In the [Azure portal](https://portal.azure.com), navigate to the SQL database and select the Show database connection strings near the top of the Overview blade.
+1. In the [Azure portal](https://portal.azure.com), navigate to the SQL database and select the Show database connection strings near the top of the Overview blade
 
     ![Screenshot of the Azure Portal, Database section. Under Connection strings, the link to "Show database connection strings" is highlighted.](./media/sql-database-show-connection-strings.png "Show SQL Database Connection Strings")
 
-2. Copy the connection string on the ADO.NET tab of the Database connection string blade, and paste the value into a text editor, such as Notepad, for later reference.
+2. Copy the connection string on the ADO.NET tab of the Database connection string blade, and paste the value into a text editor, such as Notepad, for later reference
 
     ![Screenshot of the ADO.NET tab, with the connection string selected, and the copy button highlighted.](./media/sql-database-ado-net-connection-string.png "SQL Database ADO.NET connection string")
 
-3. In the Simulator project, open `App.config`.
+3. In the Simulator project, open `App.config`
 
 4. Within the `connectionString` section, set the following:
 
@@ -713,7 +713,7 @@ In this exercise, you will create an in-memory, columnar index table in SQL DB t
 
         - **Password**: Password.1!!
 
-5. Save the `App.config`.
+5. Save the `App.config`
 
     ![The App.config file is shown in Visual Studio with the updated connection string to the database.](./media/visual-studio-app-config-connectionstrings.png "Connection Strings value")
 
@@ -721,11 +721,11 @@ In this exercise, you will create an in-memory, columnar index table in SQL DB t
 
 1. In solution explorer, right-click the Simulator project, and select Build. Note: You may need to ensure the previous instance you started has been closed before rebuilding.
 
-2. Ensure that your build generates no errors.
+2. Ensure that your build generates no errors
 
-3. From the Debug menu, select **Start Without Debugging**.
+3. From the Debug menu, select **Start Without Debugging**
 
-4. In the Simulator, select buy.
+4. In the Simulator, select buy
 
     ![The Vending Machine Simulator displays the ad for coconut water for \$1.25, with a buy button.](./media/simulator-app-coconut-water.png "Vending machine simulation")
 
@@ -743,7 +743,7 @@ In this exercise, you will implement the ability to push new promotions to the v
 
 In these steps, you will provision an instance of IoT Hub.
 
-1. In your browser, navigate to the [Azure portal](https://portal.azure.com), select **+Create a resource** in the navigation pane, enter "iot" into the Search the Marketplace box, select **IoT Hub** from the results, and select **Create**.
+1. In your browser, navigate to the [Azure portal](https://portal.azure.com). Select **+Create a resource** in the navigation pane, enter "iot" into the Search the Marketplace box, select **IoT Hub** from the results, and then select **Create**.
 
     ![+Create a resource is highlighted in the navigation page of the Azure portal, and "iot" is entered into the Search the Marketplace box. IoT Hub is highlighted in the search results.](./media/create-resource-iot-hub.png "Create an IoT Hub")
 
@@ -759,21 +759,21 @@ In these steps, you will provision an instance of IoT Hub.
 
         ![The Basics blade for IoT Hub is displaye, with the values specified above entered into the appropriate fields.](./media/iot-hub-basics-blade.png "Create IoT Hub Basic blade")
 
-    - Select **Next: Size and Scale**.
+    - Select **Next: Size and Scale**
 
-    - On the Size and scale blade, accept the default Pricing and scale tier of S1: Standard tier, and select **Review + create**.
+    - On the Size and scale blade, accept the default Pricing and scale tier of S1: Standard tier, and select **Review + create**
 
-    - Select **Create** on the Review + create blade.
+    - Select **Create** on the Review + create blade
 
 3. When the IoT Hub deployment is completed, you will receive a notification in the Azure portal. Select **Go to resource** in the notification.
 
     ![Screenshot of the Deployment succeeded message, with the Go to resource button highlighted.](./media/iot-hub-deployment-succeeded.png "Deployment succeeded message")
 
-4. From the IoT Hub's Overview blade, select **Shared access policies** under Settings on the left-hand menu.
+4. From the IoT Hub's Overview blade, select **Shared access policies** under Settings on the left-hand menu
 
     ![Screenshot of the Overview blade, settings section. Under Settings, Shared access policies is highlighted.](./media/iot-hub-shared-access-policies.png "Overview blade, settings section")
 
-5. Select **iothubowner** policy.
+5. Select **iothubowner** policy
 
     ![The Azure portal is shown with the iothubowner selected.](./media/iot-hub-shared-access-policies-iothubowner.png "IoT Hub Owner shared access policy")
 
@@ -783,9 +783,9 @@ In these steps, you will provision an instance of IoT Hub.
 
 ### Task 2: Listen for control messages
 
-1. Within Visual Studio Solution Explorer, expand the Simulator project, and open the file `MainWindow.xaml.cs`.
+1. Within Visual Studio Solution Explorer, expand the Simulator project, and open the file `MainWindow.xaml.cs`
 
-2. Scroll down to the `ListenForControlMessages` method.
+2. Scroll down to the `ListenForControlMessages` method
 
     ![In the Visual Studio Solution Explorer window, `ListenForControlMessages` is highlighted.](./media/visual-studio-mainwindowxaml-listenforcontrolmessages.png "Visual Studio Solution Explorer")
 
@@ -823,15 +823,15 @@ In these steps, you will provision an instance of IoT Hub.
     await _deviceClient.CompleteAsync(receivedMessage);
     ```
 
-8. Save the file.
+8. Save the file
 
 ### Task 3: Send control messages
 
-1. Within Visual Studio Solution Explorer, expand the **DeviceControlConsole** project, and open the file `Program.cs`.
+1. Within Visual Studio Solution Explorer, expand the **DeviceControlConsole** project, and open the file `Program.cs`
 
     ![Screenshot of Visual Studio Solution Explorer, with DeviceControlConsole expanded, and Program.cs highlighted.](./media/visual-studio-solution-explorer-devicecontrolconsole-program-cs.png "Visual Studio Solution Explorer")
 
-2. Scroll down to the PushPromo method.
+2. Scroll down to the PushPromo method
 
     ![PushPromo method](./media/visual-studio-program-pushpromo.png "Visual Studio Solution Explorer")
 
@@ -853,29 +853,29 @@ In these steps, you will provision an instance of IoT Hub.
 
 ### Task 4: Configure the DeviceControlConsole and Simulator
 
-1. In **DeviceControlConsole**, open `App.config`.
+1. In **DeviceControlConsole**, open `App.config`
 
     ![Screenshot of Visual Studio Solution Explorer, with DeviceControlConsole expanded, and App.config highlighted.](./media/visual-studio-solution-explorer-devicecontrolconsole-app-config.png "Visual Studio Solution Explorer")
 
-2. Set the `IoTHubConnectionString` appSetting to have a value of the connection string for the service policy to your IoT Hub. (Recall you can get this from the Azure Portal IoT Hub blade, Shared access policies, and then select the policy.)
+2. Set the `IoTHubConnectionString` appSetting to have a value of the connection string for the service policy to your IoT Hub (recall you can get this from the Azure Portal IoT Hub blade, Shared access policies, and then select the policy)
 
     ![Screenshot of the iothubowner blade. A callout points to the copy button to the right of the connection string - primary key field.](./media/iot-hub-shared-access-policies-iothubowner-blade.png "iothubowner blade")
 
-3. Set the `storageConnectionString` appSetting to have the same connection string for your storage account that the `App.config` file in the Simulator project has.
+3. Set the `storageConnectionString` appSetting to have the same connection string for your storage account that the `App.config` file in the Simulator project has
 
-4. Save the file.
+4. Save the file
 
-5. Now, open the `App.config` file in the Simulator project.
+5. Now, open the `App.config` file in the Simulator project
 
-6. Set the `IoTHubSenderConnectionString` appSetting to have a value of the connection string for the device policy to your IoT Hub.
+6. Set the `IoTHubSenderConnectionString` appSetting to have a value of the connection string for the device policy to your IoT Hub
 
-7. Set the `IoTHubManagerConnectionString` appSetting to have a value of the connection string for the **iothubowner** policy to your IoT Hub.
+7. Set the `IoTHubManagerConnectionString` appSetting to have a value of the connection string for the **iothubowner** policy to your IoT Hub
 
-8. Save the file.
+8. Save the file
 
-9. Build the Simulator and DeviceControlConsole projects.
+9. Build the Simulator and DeviceControlConsole projects
 
-10. In Solution Explorer, right-click Solution 'Vending Machines,' and select Set StartUp Projects.
+10. In Solution Explorer, right-click Solution 'Vending Machines,' and select Set StartUp Projects
 
     ![Screenshot of the Solution Explorer sub-menu for Solution VendingMachines (3 projects). Set StartUp Projects is selected.](./media/visual-studio-solution-explorer-set-startup-projects.png "Solution Explorer")
 
@@ -883,25 +883,25 @@ In these steps, you will provision an instance of IoT Hub.
 
     ![Screenshot of the VendingMachines solution Property Pages Dialog Box.](./media/visual-studio-solution-explorer-select-startup-projects.png "VendingMachines Property Pages Dialog Box")
 
-12. Select OK.
+12. Select OK
 
-13. From the Debug menu, choose Start without Debugging.
+13. From the Debug menu, choose Start without Debugging
 
-14. Wait for both the Vending Machine Simulator and the DeviceControlConsole to appear.
+14. Wait for both the Vending Machine Simulator and the DeviceControlConsole to appear
 
     ![Screenshot of the Vending Machine Simulator and DeviceControlConsole. The Vending Machine Simulator displays the coconut water ad.](./media/vending-machine-simulator-plus-devicecontrolconsole.png "Vending Machine Simulator and DeviceControlConsole")
 
-15. In the DeviceControlConsole, press 1 to push the promotion for Soda.
+15. In the DeviceControlConsole, press 1 to push the promotion for Soda
 
     ![Screenshot of the Vending Machine Simulator and DeviceControlConsole. This time, the Vending Machine Simulator displays the soda ad.](./media/vending-machine-simulator-plus-devicecontrolconsole-select.png "Vending Machine Simulator and DeviceControlConsole")
 
-16. Observe that the entire promotion surface of the vending machine changes (product name, price, and image).
+16. Observe that the entire promotion surface of the vending machine changes (product name, price, and image)
 
     > **Note:** If the photo does not change, and after a few minutes you receive a DotNetty.Transport... error, you will need to delete and recreate your IoT Hub in the Azure portal. The error is caused by a communication error between the application and your IoT Hub. Be sure to update your App.config file with the new IoT hub connection strings.
 
-17. Experiment sending the other promotion or toggling between promotions.
+17. Experiment sending the other promotion or toggling between promotions
 
-18. Experiment with making purchases and sending photos to verify the other functions still work with the new promoted products.
+18. Experiment with making purchases and sending photos to verify the other functions still work with the new promoted products
 
 ## Exercise 5: Analytics with Power BI Desktop
 
@@ -911,15 +911,15 @@ In this exercise, you will use Power BI Desktop to query purchase data from the 
 
 ### Task 1: Build the query and create the visualization
 
-1. From your Start menu on your Lab VM, open Power BI Desktop.
+1. From your Start menu on your Lab VM, open Power BI Desktop
 
     ![The Power BI Desktop link is shown.](./media/power-bi-desktop-start-menu-tile.png "Power BI Desktop Start menu tile")
 
-2. In the opening dialog, select **Get Data**.
+2. In the opening dialog, select **Get Data**
 
     ![Screenshot of the Power BI Desktop opening dialog box, with the Get Data link.](./media/power-bi-desktop-get-data.png "Power BI Desktop opening dialog box")
 
-3. In the Get Data dialog, select **Azure** in the categories list and then **Azure SQL Database**.
+3. In the Get Data dialog, select **Azure** in the categories list and then **Azure SQL Database**
 
     ![Screenshot of the Get Data dialog box.](./media/power-bi-desktop-get-data-azure-sql-database.png "Get Data dialog box")
 
@@ -929,55 +929,55 @@ In this exercise, you will use Power BI Desktop to query purchase data from the 
 
     ![Screenshot of the SQL Server Database dialog box.](./media/power-bi-desktop-get-data-azure-sql-database-properties.png "SQL Server Database dialog box")
 
-6. On the next screen, select the **Database** tab on the left, and provide your SQL username (demouser) and password (Password.1!!), then select **Connect**.
+6. On the next screen, select the **Database** tab on the left. provide your SQL username (demouser) and password (Password.1!!), and then select **Connect**.
 
     ![Screenshot of the SQL Server Database dialog box.](./media/power-bi-desktop-get-data-azure-sql-database-connect.png "SQL Server database dialog box")
 
-7. In the Navigator dialog, check the box next to **Transactions**.
+7. In the Navigator dialog, check the box next to **Transactions**
 
     ![Screenshot of the Navigator dialog box. In the left pane, under Display options, the checkbox is selected for Transactions.](./media/power-bi-desktop-get-data-azure-sql-database-select-tables.png "Navigator dialog box")
 
-8. Select **Load**.
+8. Select **Load**
 
-9. In the Ribbon, select **Edit Queries**.
+9. In the Ribbon, select **Edit Queries**
 
     ![The Power BI Desktop Edit Queries button is shown.](./media/power-bi-desktop-edit-queries-button.png "Edit Queries button")
 
-10. In the Query Editor, select the Transaction Date column header to select the column.
+10. In the Query Editor, select the Transaction Date column header to select the column
 
     ![The TransactionDate column is shown.](./media/power-bi-desktop-edit-queries-transactiondata.png "TransactionData column")
 
-11. In the Ribbon, select the **Add Column** tab and select Time, Hour, Hour.
+11. In the Ribbon, select the **Add Column** tab and select Time, Hour, Hour
 
     ![Screenshot of the Query Editor. On the ribbon, the Add Column tab is selected. On the Add Column ribbon, Time is selected. From its sub-menu, Hour is selected, and from Hour's sub-menu, Hour is selected again.](./media/power-bi-desktop-edit-queries-add-column.png "Query Editor")
 
 12. Select the **TransactionDate** column again.
 
-13. In the Ribbon, select **Time, Minute.**
+13. In the Ribbon, select **Time, Minute**
 
     ![On the Add Column ribbon, Time is selected, and from its sub-menu, Minute is selected.](./media/power-bi-desktop-edit-queries-add-column-time.png "Time sub-menu")
 
-14. Select the **TransactionDate** one more time.
+14. Select the **TransactionDate** one more time
 
-15. In the Ribbon, select **Time, Second**.
+15. In the Ribbon, select **Time, Second**
 
-16. In the Ribbon, on the Home tab, select **Close & Apply**.
+16. In the Ribbon, on the Home tab, select **Close & Apply**
 
     ![Close and Apply is shown.](./media/power-bi-desktop-edit-queries-close-apply.png)
 
-17. In the message that appears, select **Apply Changes**.
+17. In the message that appears, select **Apply Changes**
 
     ![The Apply Changes message displays, informing you that there are pending changes in your queries that haven't been applied.](./media/power-bi-desktop-edit-queries-apply-changes.png "Apply Changes message")
 
-18. In the Visualizations, select **Stacked column chart**.
+18. In the Visualizations, select **Stacked column chart**
 
     ![Screenshot of the Visualizations menu, with the stacked column chart icon selected.](./media/power-bi-desktop-visualizations-stacked-column-chart.png "Visualizations menu")
 
-19. From the Fields list, drag the **minute** field over to the **axis** property.
+19. From the Fields list, drag the **minute** field over to the **axis** property
 
     ![Minute has been added under Axis.](./media/power-bi-desktop-visualizations-stacked-column-chart-axis.png "Stack Column Chart Axis")
 
-20. From the Fields list, drag the **PurchasePrice** over to the **value** property.
+20. From the Fields list, drag the **PurchasePrice** over to the **value** property
 
     ![The PurchasePrice has been added under Value.](./media/power-bi-desktop-visualizations-stacked-column-chart-value.png "Stack Column Chart Value")
 
@@ -993,8 +993,8 @@ In this exercise, you will delete any Azure resources that were created in suppo
 
 ### Task 1: Delete the resource group
 
-1. Using the [Azure portal](https://portal.azure.com), navigate to the Resource group you used throughout this hands-on lab by selecting Resource groups in the left menu.
-2. Search for the name of your research group, and select it from the list.
-3. Select Delete in the command bar, and confirm the deletion by re-typing the Resource group name, and selecting Delete.
+1. Using the [Azure portal](https://portal.azure.com), navigate to the Resource group you used throughout this hands-on lab by selecting Resource groups in the left menu
+2. Search for the name of your research group, and select it from the list
+3. Select Delete in the command bar. Confirm the deletion by re-typing the Resource group name and selecting Delete
 
-*You should follow all steps provided after attending the Hands-on lab.*
+You should follow all steps provided *after* attending the Hands-on lab.
