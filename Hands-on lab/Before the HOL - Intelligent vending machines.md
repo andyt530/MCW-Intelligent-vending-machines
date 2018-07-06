@@ -60,7 +60,7 @@ In this task, you will run an Azure Resource Manager (ARM) template to provision
 
 1. Select the **Deploy to Azure** button below to launch the script in a Custom deployment blade in the Azure portal
 
-    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2FMCW-Intelligent-vending-machines%2Fmay-2018-update%2FHands-on%20lab%2Fdeployment-template%2Fazure-deploy.json" target="_blank">
+    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2FMCW-Intelligent-vending-machines%2Fmaster%2FHands-on%20lab%2Fdeployment-template%2Fazure-deploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
     </a>
 
