@@ -40,7 +40,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 
 ### Abstract and learning objectives
 
-In this whiteboard design session, you will work with a group to design an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure Machine Learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
+In this whiteboard design session, you will work with a group to design an IoT solution for intelligent vending machines, leveraging facial feature recognition and Azure machine learning, to gain a better understanding of building cloud-based machine learning apps and real-time analytics with SQL Database in-memory and columnar indexing.
 
 At the end of this whiteboard design session, you will be better able to architect IoT solutions leveraging cloud-based machine learning services and real-time analytics.
 
