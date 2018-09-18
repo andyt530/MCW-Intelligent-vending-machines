@@ -9,7 +9,7 @@ Hands-on lab setup guide
 </div>
 
 <div class="MCWHeader3">
-May 2018
+Sept 2018
 </div>
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -205,13 +205,13 @@ In these steps, you will add containers for photos and promos to the photostorag
 
     ![Screenshot of the Visual Studio Cloud Explorer tree view, which is expanded to: Storage Accounts\\photostorageSUFFIX\\Blob Containers.](./media/visual-studio-cloud-explorer-storage-accounts.png "Storage accounts in Cloud Explorer")
 
-10. Right-click the promo container and select Open
+10. Right-click the **promo** container and select **Open**
 
-11. Select the Upload blob button
+11. Select the **Upload Blob** button
 
     ![Screenshot of the Upload blob button.](./media/visual-studio-cloud-explorer-storage-account-container-upload-blob.png "Upload blob button")
 
-12. Select **Browse**, and in the File dialog, select the three images `CoconutWater.png`, `Water.png`, and `Soda.png` from the starter solution's `Simulator\Images` folder, then select **Open**.
+12. Select **Browse**, and in the File dialog, select the three images `CoconutWater.png`, `Water.png`, and `Soda.png` from the `C:\VendingMachines\Hands-on lab\starter-project\SimulatorSimulator\Images` folder, then select **Open**.
 
 13. Select **OK** on the Upload New File Dialog to upload the images into the container
 
@@ -221,25 +221,29 @@ In these steps, you will add containers for photos and promos to the photostorag
 
 In this task, you will perform some configuration on the Machine Learning Server that was provisioned by the ARM template.
 
-1. In the [Azure portal](https://portal.azure.com), navigate to the Overview blade of the LabMLServer VM, select **Connect**, and copy the SSH command
+1. In the [Azure portal](https://portal.azure.com), navigate to the Overview blade of the **LabMLServer** VM, select **Connect**, and copy the SSH command
 
     ![Connect to virtual machine blade, with the SSH command highlighted.](./media/machine-learning-server-connect.png "Connect to virtual machine via SSH")
 
-2. On your Lab VM, open a new Git Bash window, and paste the SSH connection command you copied in the previous step. For example: `ssh radmin@40.70.129.190`
+2. On your Lab VM, open a new Git Bash window (click **Search**, then type **Git Bash**):
 
-3. Execute the command to SSH into your Microsoft Machine Learning Server VM
+   ![Open the Git Bash applications.](./media/git-bash.png "Open the Git Bash App")
 
-4. When prompted if you want to continue connecting, enter **yes**
+3. Paste the SSH connection command you copied in the previous step. For example: `ssh radmin@40.70.129.190`
 
-5. Enter your password, **Password.1!!**
+4. Execute the command to SSH into your Microsoft Machine Learning Server VM
 
-6. At the prompt, after successfully logging in, enter the following command:
+5. When prompted if you want to continue connecting, enter **yes**
+
+6. Enter your password, **Password.1!!**
+
+7. At the prompt, after successfully logging in, enter the following command:
 
     ```bash
     sudo apt-get update -y
     ```
 
-7. Type **exit** twice to disconnect from the SSH session
+8. Type **exit** twice to disconnect from the SSH session
 
 *These steps should be completed prior to starting the rest of the Lab.*
 
