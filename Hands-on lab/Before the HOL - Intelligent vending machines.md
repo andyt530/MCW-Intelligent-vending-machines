@@ -253,5 +253,4 @@ You are now ready to complete the hands-on lab. Select a guide below to get star
 
 - Complete Hands-on lab
   - [Step-by-step guide](./HOL-step-by-step-Intelligent-vending-machines.md)
-  - [Unguided guide](./HOL-unguided-Intelligent-vending-machines.md)
 - Return to [Hands-on lab readme](./readme.md)
