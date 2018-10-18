@@ -1,4 +1,4 @@
-# Intelligent vending machines
+# Intelligent vending machines (Job Center Kiosks)
 
 [Download cloud workshop](https://github.com/Microsoft/MCW-Intelligent-vending-machines/archive/master.zip)
 
