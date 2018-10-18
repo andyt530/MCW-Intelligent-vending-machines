@@ -1,4 +1,4 @@
-# Intelligent vending machines hands-on lab
+# Intelligent vending machines hands-on lab (Job Center Kiosks)
 
 ## Contents
 
